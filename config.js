@@ -54,6 +54,10 @@ module.exports = {
     vuejs: {
       name: 'Vue.js',
       description: 'Vue.js is a JavaScript framework for building interactive web applications.'
-    }
+    },
+    // beginners: {
+    //   name: 'Beginners',
+    //   description: 'All articles for beginners'
+    // }
   }
 }
