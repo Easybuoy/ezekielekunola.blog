@@ -3,6 +3,7 @@ module.exports = {
   pathPrefix: '/gatsby-starter-developer-blog',
   siteUrl: 'https://lgcolella.github.io',
   siteTitle: 'Ezekiel',
+  siteLogo: './src/images/logo.png',
   siteDescription: 'Logbook of a software developer',
   author: 'lcolella',
   postsForArchivePage: 3,
@@ -16,7 +17,7 @@ module.exports = {
     archive: 'archive'
   },
   social: {
-    github: 'https://github.com/lgcolella',
+    github: 'https://github.com/easybuoy',
     linkedin: '',
     rss: '/rss.xml'
   },
