@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: "https://blog.ezekielekunola.com",
   siteTitle: "Ezekiel",
   siteLogo: "./src/images/logo.png",
-  siteDescription: "Logbook of a software developer",
+  siteDescription: "Tech Digests by Ezekiel Ekunola",
   author: "easybuoy",
   postsForArchivePage: 3,
   defaultLanguage: "en",

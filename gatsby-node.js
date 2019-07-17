@@ -30,7 +30,10 @@ exports.createPages = ({ actions, graphql }) => {
     /* Post pages */
     allMarkdownRemark.edges.forEach(({ node }) => {
       // Check path prefix of post
-      if (node.frontmatter.path.indexOf(config.pages.blog) !== 0) throw `Invalid path prefix: ${node.frontmatter.path}`
+
+      // if (node.frontmatter.path.indexOf(config.pages.blog) !== 0) throw `Invalid path prefix: ${node.frontmatter.path}`
+
+
       
       createPage({
         path: node.frontmatter.path,
