@@ -1,10 +1,11 @@
 
 module.exports = {
   pathPrefix: '/gatsby-starter-developer-blog',
-  siteUrl: 'https://lgcolella.github.io',
+  siteUrl: 'https://blog.ezekielekunola.com',
   siteTitle: 'Ezekiel',
+  siteLogo: './src/images/logo.png',
   siteDescription: 'Logbook of a software developer',
-  author: 'lcolella',
+  author: 'easybuoy',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
   disqusScript: 'https://luigi-colella.disqus.com/embed.js',
@@ -16,8 +17,8 @@ module.exports = {
     archive: 'archive'
   },
   social: {
-    github: 'https://github.com/lgcolella',
-    linkedin: '',
+    github: 'https://github.com/easybuoy',
+    linkedin: 'https://www.linkedin.com/in/easybuoy/',
     rss: '/rss.xml'
   },
   tags: {

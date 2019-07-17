@@ -1,63 +1,66 @@
 /* Vendor imports */
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaRss } from 'react-icons/fa'
+import React, { Component } from "react";
+import { Link } from "gatsby";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 /* App imports */
-import style from './header.module.less'
-import Config from '../../../../config'
-import Utils from '../../../utils'
+import style from "./header.module.less";
+import Config from "../../../../config";
+import Utils from "../../../utils";
+
+import siteLogo from "../../../images/logo.svg";
 
 class Header extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       lastScrollY: 0,
       fixedHeader: false,
-      collapsedMenu: true,
-    }
-    this.toggleFixedHeader = this.toggleFixedHeader.bind(this)
-    this.toggleMenu = this.toggleMenu.bind(this)
+      collapsedMenu: true
+    };
+    this.toggleFixedHeader = this.toggleFixedHeader.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.toggleFixedHeader)
+    window.addEventListener("scroll", this.toggleFixedHeader);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.toggleFixedHeader)
+    window.removeEventListener("scroll", this.toggleFixedHeader);
   }
 
   toggleFixedHeader() {
     if (!this.toggleFixedHeader.animationInProgress) {
-      this.toggleFixedHeader.animationInProgress = true
+      this.toggleFixedHeader.animationInProgress = true;
       setTimeout(() => {
         this.setState(
           {
             lastScrollY: window.scrollY,
             fixedHeader:
-              window.scrollY > 100 && this.state.lastScrollY < window.scrollY,
+              window.scrollY > 100 && this.state.lastScrollY < window.scrollY
           },
           () => (this.toggleFixedHeader.animationInProgress = false)
-        )
-      }, 200)
+        );
+      }, 200);
     }
   }
 
   toggleMenu() {
     this.setState({
-      collapsedMenu: !this.state.collapsedMenu,
-    })
+      collapsedMenu: !this.state.collapsedMenu
+    });
   }
 
   render = () => (
     <div
       className={style.container}
-      style={this.state.fixedHeader ? { backgroundImage: 'none' } : null}
+      style={this.state.fixedHeader ? { backgroundImage: "none" } : null}
     >
       <div className={style.titleContainer}>
         <div className={style.title}>
           <Link to={Utils.resolvePageUrl(Config.pages.home)}>
-            <h4>{Config.siteTitle}</h4>
+            {/* <h4>{Config.siteTitle}</h4> */}
+            <img src={siteLogo} alt="logo" />
             <p
               className={
                 this.state.fixedHeader
@@ -65,7 +68,7 @@ class Header extends Component {
                   : style.visibleDescription
               }
             >
-              {Config.siteDescription}
+              {/* {Config.siteDescription} */}
             </p>
           </Link>
         </div>
@@ -80,8 +83,8 @@ class Header extends Component {
       <div
         className={[
           style.list,
-          this.state.collapsedMenu ? style.collapsedMenu : style.expandedMenu,
-        ].join(' ')}
+          this.state.collapsedMenu ? style.collapsedMenu : style.expandedMenu
+        ].join(" ")}
       >
         <ul>
           <li>
@@ -91,7 +94,8 @@ class Header extends Component {
             <Link to={Utils.resolvePageUrl(Config.pages.tag)}>Tags</Link>
           </li>
           <li>
-            <Link to={Utils.resolvePageUrl(Config.pages.about)}>About</Link>
+            {/* <Link to="/https://ezekielekunola.com/">About</Link> */}
+            <a href="https://ezekielekunola.com/">About</a>
           </li>
         </ul>
         <ul>
@@ -113,15 +117,15 @@ class Header extends Component {
               <FaLinkedin size="30" />
             </a>
           </li>
-          <li>
+          {/* <li>
             <Link to={Utils.resolveUrl(Config.social.rss)}>
               <FaRss size="30" />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
