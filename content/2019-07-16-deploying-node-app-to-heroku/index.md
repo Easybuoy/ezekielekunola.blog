@@ -2,7 +2,7 @@
 title: Deploying Node App to Heroku
 tags: [ react, javascript, nodejs, heroku]
 date: 2019-07-04T05:25:44.226Z
-path: blog/deploying-node-app-to-heroku
+path: deploying-node-app-to-heroku
 cover: ./preview.png
 excerpt: Learn about deploying a node app to heroku.
 ---
