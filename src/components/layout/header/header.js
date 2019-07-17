@@ -1,7 +1,7 @@
 /* Vendor imports */
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaRss } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 /* App imports */
 import style from "./header.module.less";
 import Config from "../../../../config";
@@ -60,7 +60,7 @@ class Header extends Component {
         <div className={style.title}>
           <Link to={Utils.resolvePageUrl(Config.pages.home)}>
             {/* <h4>{Config.siteTitle}</h4> */}
-            <img src={siteLogo} style={{height: '80px'}} />
+            <img src={siteLogo} alt="logo" />
             <p
               className={
                 this.state.fixedHeader
@@ -94,7 +94,8 @@ class Header extends Component {
             <Link to={Utils.resolvePageUrl(Config.pages.tag)}>Tags</Link>
           </li>
           <li>
-            <Link to={Utils.resolvePageUrl(Config.pages.about)}>About</Link>
+            {/* <Link to="/https://ezekielekunola.com/">About</Link> */}
+            <a href="https://ezekielekunola.com/">About</a>
           </li>
         </ul>
         <ul>

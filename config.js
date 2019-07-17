@@ -18,7 +18,7 @@ module.exports = {
   },
   social: {
     github: 'https://github.com/easybuoy',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/easybuoy/',
     rss: '/rss.xml'
   },
   tags: {
