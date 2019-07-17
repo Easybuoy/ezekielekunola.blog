@@ -17,10 +17,10 @@ module.exports = [
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: "Ezekiel Ekunola Blog",
-      short_name: "EE`",
+      short_name: "EE",
       start_url: "/",
       background_color: "#f5f5f5",
-      theme_color: "#0C2744",
+      theme_color: "#343434",
       display: "standalone",
       icon: "src/images/logo.png", // This path is relative to the root of the site.
       legacy: true // this will add apple-touch-icon links to <head>. Required for versions prior to iOS 11.3.
