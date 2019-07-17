@@ -42,7 +42,7 @@ module.exports = [
               maxWidth: 1000,
               quality: 80,
               showCaptions: true,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
             },
           },
           'gatsby-remark-prismjs'

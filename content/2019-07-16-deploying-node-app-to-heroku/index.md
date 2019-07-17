@@ -14,10 +14,10 @@ We'll cover two different ways  which include:
 
 
 # Deploying using Github
-The first order of business is to push your code to Github. I'll be using this [repository] (https://github.com/Easybuoy/node-api-deploy/) to deploy.
+The first order of business is to push your code to Github. I'll be using this [repository](https://github.com/Easybuoy/node-api-deploy/) to deploy.
 
 
-Sign up on [Heroku] (https://heroku.com), if you do not have an account yet with them.
+Sign up on [Heroku](https://heroku.com), if you do not have an account yet with them.
 
 
 Once you've signed up, follow the steps below to create an application on your dashboard 
@@ -27,11 +27,11 @@ Once you've signed up, follow the steps below to create an application on your d
 - Finally, click on the **Create** button to create the new app.
 
 An example is shown below
-![](https://thepracticaldev.s3.amazonaws.com/i/elb9vh182tp04p9fqgs6.gif)
+![](./create-heroku-app.gif)
 
 After creating the application, under the deploy section, connect your Github account to Heroku and deploy the application. See the example below.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/xeekgbjyil3khmiic71w.gif)
+![](./deploying.gif)
 
 Once deployed you can go ahead and click on view app, and that's it, we've successfully deployed using Github.
 
@@ -44,7 +44,7 @@ If you want to use another script to start your application, scroll down to the 
 
 
 # Deploying using CLI
-Navigate [here] (https://devcenter.heroku.com/articles/heroku-cli) to download Heroku-CLI for your operating system.
+Navigate [here](https://devcenter.heroku.com/articles/heroku-cli) to download Heroku-CLI for your operating system.
 
 
 - Install Heroku-CLI on your local machine
@@ -98,7 +98,8 @@ In order to add environment variables on Heroku, we'll use the following steps
 - add environment variables
 * You can follow the example shown in the image below *
 
-![](https://thepracticaldev.s3.amazonaws.com/i/r5evxzhymzsm2huc4t1v.gif)
+![](./preview.png)
+<!-- ![](./environment-variables.gif) -->
 
 To add environment variables with CLI
 ``` 
@@ -110,7 +111,7 @@ to get environment variable
 heroku config:get GITHUB_USERNAME
 ```
 
-> Learn more about environment variables [here] (https://devcenter.heroku.com/articles/config-vars)
+> Learn more about environment variables [here](https://devcenter.heroku.com/articles/config-vars)
 
 ### Heroku logs
 To view the log on Heroku via `Heroku's web interface` 
@@ -135,7 +136,7 @@ For example, if you want to run a `server` script instead of a `start` script wh
 web: npm run server
 ```
 
-> Learn more about Heroku Procfile [here] (https://devcenter.heroku.com/articles/procfile)
+> Learn more about Heroku Procfile [here](https://devcenter.heroku.com/articles/procfile)
 
 
 
