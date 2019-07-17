@@ -7,7 +7,7 @@ import style from "./header.module.less";
 import Config from "../../../../config";
 import Utils from "../../../utils";
 
-import siteLogo from "../../../images/logo.svg";
+import siteLogo from "../../../images/logo-light.svg";
 
 class Header extends Component {
   constructor() {
