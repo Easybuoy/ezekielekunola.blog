@@ -1,6 +1,6 @@
 ---
 title: Deploying React App from Github to Netlify
-tags: [react, javascript]
+tags: [react, javascript, netlify]
 date: 2019-07-04T05:25:44.226Z
 path: blog/deploying-react-app-from-github-to-netlify
 cover: ./preview.png
