@@ -27,6 +27,7 @@ Once you've signed up, follow the steps below to create an application on your d
 - Finally, click on the **Create** button to create the new app.
 
 An example is shown below
+
 ![](./create-heroku-app.gif)
 
 After creating the application, under the deploy section, connect your Github account to Heroku and deploy the application. See the example below.
@@ -98,8 +99,7 @@ In order to add environment variables on Heroku, we'll use the following steps
 - add environment variables
 * You can follow the example shown in the image below *
 
-![](./preview.png)
-<!-- ![](./environment-variables.gif) -->
+![](./environment-variables.gif)
 
 To add environment variables with CLI
 ``` 
@@ -119,7 +119,7 @@ To view the log on Heroku via `Heroku's web interface`
 - Click on `view logs`
 Example below.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/52onozq39bx20m0e1p2n.gif)
+![gif](https://thepracticaldev.s3.amazonaws.com/i/52onozq39bx20m0e1p2n.gif)
 
 To view the log on Heroku via CLI
 - After logging in to the Heroku app, run 
