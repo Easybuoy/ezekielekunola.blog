@@ -4,7 +4,7 @@ tags: [react, javascript, nodejs]
 date: 2019-07-04T05:25:44.226Z
 path: blog/deploying-node-app-to-heroku
 cover: ./preview.png
-excerpt: Learn about deploying react app to netlify.
+excerpt: Learn about deploying a node app to heroku.
 ---
 I will be taking us through the process of deploying a Node App to Heroku.
 
