@@ -71,6 +71,16 @@ module.exports = {
       name: "Heroku",
       description:
         "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."
+    },
+    motivation: {
+      name: "Motivation",
+      description:
+        "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."
+    },
+    career: {
+      name: "Career",
+      description:
+        "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."
     }
   }
 };
