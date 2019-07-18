@@ -18,7 +18,7 @@ module.exports = {
   social: {
     github: "https://github.com/easybuoy",
     linkedin: "https://www.linkedin.com/in/easybuoy/",
-    rss: "/rss.xml"
+    twitter: "https://twitter.com/easybuoy"
   },
   tags: {
     angular: {
@@ -75,12 +75,12 @@ module.exports = {
     motivation: {
       name: "Motivation",
       description:
-        "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."
+        "Motivational articles"
     },
     career: {
       name: "Career",
       description:
-        "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."
+        "Career related articles."
     }
   }
 };
