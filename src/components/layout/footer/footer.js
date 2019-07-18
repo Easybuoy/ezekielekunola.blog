@@ -5,7 +5,8 @@ import style from './footer.module.less'
 
 const Footer = () => (
   <div className={style.container}>
-    <p>&copy; {new Date().getFullYear()} Ezekiel Ekunola; 👨🏾‍💻 by <a href="##">Gatsby</a></p>
+    <p>&copy; {new Date().getFullYear()}; 👨🏾‍💻 by Ezekiel Ekunola </p>
+    <p> Powered by <a href="https://www.gatsbyjs.org/">Gatsby</a></p>
   </div>
 )
 
