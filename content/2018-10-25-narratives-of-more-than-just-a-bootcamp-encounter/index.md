@@ -1,5 +1,5 @@
 ---
-title: NARRATIVES OF MORE THAN JUST A BOOT-CAMP ENCOUNTER.
+title: Narratives Of More Than Just A Boot-Camp Encounter.
 tags: [career, motivation]
 date: 2018-10-25T05:25:44.226Z
 path: narratives-of-more-than-just-a-bootcamp-encounter
@@ -25,7 +25,7 @@ Aside from writing codes, I have learned some skills and qualities that would be
 
 ### Giving and Receiving Feedback
  ![](./feedback.png)
- 
+
 Giving and receiving feedback helps one to improve their job performance.
 
  **Giving feedback:** I've learned to give feedback following the ASK principle which is it has to be Actionable, Specific and Kind.
