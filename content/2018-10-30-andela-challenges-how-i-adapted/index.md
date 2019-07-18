@@ -30,3 +30,5 @@ I also had some challenges when implementing some code functions which are liste
 The boot camp has made me a better developer without a doubt and has added so much value that would later be of use in the nearest future, qualities like how to manage time, writing professionally, ability to collaborate, asking questions and ability to give and receive feedback.
 
 Thank you for reading.
+
+This article was originally posted on [Medium](https://medium.com/@easybuoy/andela-bootcamp-challenges-how-i-adapted-2e44255210bf)
