@@ -19,7 +19,7 @@ This was another challenge I faced. It's one thing to manage one's time, it's an
 I also had some challenges when implementing some code functions which are listed below:
 
 ### Postgres
- Even though I had worked with relational databases before, for some reason I really had a tough time even getting pg-admin to work on my local machine and implementing Postgres in my web application API, but I learned with use of articles and video tutorials. Funny to say now, it was quite simple in the end.
+ Even though I had worked with relational databases before, for some reason I really had a tough time even getting pg-admin to work on my local machine and implementing Postgres in my web application API, but I learned with the use of articles and video tutorials. Funny to say now, it was quite simple in the end.
 
 ### API
  I also had challenges implementing some API routes especially when communicating with the database and had to perform operations on the value returned immediately.
