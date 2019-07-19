@@ -1,6 +1,6 @@
 ---
 title: Andela Bootcamp Challenges; how I adapted
-tags: [career, motivation]
+tags: [career, motivation, bootcamp]
 date: 2018-10-30T05:25:44.226Z
 path: andela-bootcamp-challenges-how-i-adapted
 cover: ./preview.png

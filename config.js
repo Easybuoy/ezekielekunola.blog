@@ -81,6 +81,11 @@ module.exports = {
       name: "Career",
       description:
         "Career related articles."
+    },
+    bootcamp: {
+      name: "Bootcamp",
+      description:
+        "Bootcamp experiences"
     }
   }
 };

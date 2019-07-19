@@ -1,6 +1,6 @@
 ---
 title: Narratives Of More Than Just A Boot-Camp Encounter.
-tags: [career, motivation]
+tags: [career, motivation, bootcamp]
 date: 2018-10-25T05:25:44.226Z
 path: narratives-of-more-than-just-a-bootcamp-encounter
 cover: ./preview.png
