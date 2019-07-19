@@ -1,6 +1,6 @@
 ---
 title: Andela Bootcamp Challenges; how I adapted
-tags: [career, motivation]
+tags: [career, motivation, bootcamp]
 date: 2018-10-30T05:25:44.226Z
 path: andela-bootcamp-challenges-how-i-adapted
 cover: ./preview.png
@@ -29,6 +29,6 @@ I also had some challenges when implementing some code functions which are liste
 # Conclusion
 The boot camp has made me a better developer without a doubt and has added so much value that would later be of use in the nearest future, qualities like how to manage time, writing professionally, ability to collaborate, asking questions and ability to give and receive feedback.
 
-Thank you for reading.
-
 This article was originally posted on [Medium](https://medium.com/@easybuoy/andela-bootcamp-challenges-how-i-adapted-2e44255210bf)
+
+Thank you for reading.

@@ -1,6 +1,6 @@
 ---
 title: Narratives Of More Than Just A Boot-Camp Encounter.
-tags: [career, motivation]
+tags: [career, motivation, bootcamp]
 date: 2018-10-25T05:25:44.226Z
 path: narratives-of-more-than-just-a-bootcamp-encounter
 cover: ./preview.png
@@ -60,5 +60,7 @@ To be a world-class developer means I have to work on myself daily as there are 
 
 ## Conclusion
 > In few words, during the Andela boot camp I have realized that adding values to myself is not enough, but the quality of values I add matters more (quality in terms of how the value was acquired, and the processes involved) also most importantly is extending/sharing the values with others.
+
+This article was originally posted on [](https://medium.com/@easybuoy/narratives-of-more-than-just-a-boot-camp-encounter-2e35f7afe411)
 
 Thank you for reading 🙏🏾.
