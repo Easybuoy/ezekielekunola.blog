@@ -9,6 +9,8 @@ import PostList from '../components/post-list'
 import ArchivePagination from '../components/archive-pagination'
 import Config from '../../config'
 
+console.log(process.env.NODE_ENV)
+console.log(process.env.ANALYTICS_ID)
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" description={Config.siteDescription} path="" />

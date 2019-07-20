@@ -1,4 +1,7 @@
 const feedPlugin = require("./gatsby-config.plugins.feed");
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 module.exports = [
   "gatsby-plugin-react-helmet",
@@ -49,6 +52,13 @@ module.exports = [
         "gatsby-remark-prismjs",
         "gatsby-remark-copy-linked-files"
       ]
+    }
+  },
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.ANALYTICS_ID,
+      head: true
     }
   },
   feedPlugin,
