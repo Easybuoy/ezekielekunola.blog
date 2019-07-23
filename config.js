@@ -1,3 +1,7 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`
+// });
+
 module.exports = {
   pathPrefix: "/easybuoy",
   siteUrl: "https://blog.ezekielekunola.com",
@@ -7,7 +11,7 @@ module.exports = {
   author: "easybuoy",
   postsForArchivePage: 3,
   defaultLanguage: "en",
-  disqusScript: "https://luigi-colella.disqus.com/embed.js",
+  disqusScript: process.env.DISCUSS_URL,
   pages: {
     home: "/",
     blog: "blog",
