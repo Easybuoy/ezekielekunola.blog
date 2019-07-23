@@ -1,7 +1,7 @@
 // require("dotenv").config({
 //   path: `.env.${process.env.NODE_ENV}`
 // });
-
+console.log(process.env.DISCUSS_URL)
 module.exports = {
   pathPrefix: "/easybuoy",
   siteUrl: "https://blog.ezekielekunola.com",
@@ -78,18 +78,15 @@ module.exports = {
     },
     motivation: {
       name: "Motivation",
-      description:
-        "Motivational articles"
+      description: "Motivational articles"
     },
     career: {
       name: "Career",
-      description:
-        "Career related articles."
+      description: "Career related articles."
     },
     bootcamp: {
       name: "Bootcamp",
-      description:
-        "Bootcamp experiences"
+      description: "Bootcamp experiences"
     }
   }
 };
