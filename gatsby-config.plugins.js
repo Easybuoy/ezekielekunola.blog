@@ -1,7 +1,7 @@
 const feedPlugin = require("./gatsby-config.plugins.feed");
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`
+// });
 
 module.exports = [
   "gatsby-plugin-react-helmet",
