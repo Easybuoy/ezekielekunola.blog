@@ -1,8 +1,5 @@
 const feedPlugin = require("./gatsby-config.plugins.feed");
-// require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`
-// });
-console.log(process.env.ANALYTICS_ID)
+
 module.exports = [
   "gatsby-plugin-react-helmet",
   "gatsby-transformer-sharp",
