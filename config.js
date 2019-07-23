@@ -1,7 +1,7 @@
 // require("dotenv").config({
 //   path: `.env.${process.env.NODE_ENV}`
 // });
-
+console.log(process.env.DISCUSS_URL)
 module.exports = {
   pathPrefix: "/easybuoy",
   siteUrl: "https://blog.ezekielekunola.com",
