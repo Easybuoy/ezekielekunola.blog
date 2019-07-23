@@ -27,7 +27,6 @@ class Comments extends React.Component {
           s = d.createElement('script')
         s.src = Config.disqusScript
         s.setAttribute('data-timestamp', +new Date())
-        console.log(s)
         ;(d.head || d.body).appendChild(s)
       })()
     }
