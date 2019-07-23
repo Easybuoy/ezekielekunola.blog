@@ -33,7 +33,7 @@ function SEO({
         )
         const metaImageUrl = Utils.resolveUrl(
           Config.siteUrl,
-          imageUrl ? imageUrl : data.file.childImageSharp.fixed.src
+          // imageUrl ? imageUrl : data.file.childImageSharp.fixed.src
         )
 
         return (
