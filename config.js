@@ -7,7 +7,8 @@ module.exports = {
   author: "easybuoy",
   postsForArchivePage: 3,
   defaultLanguage: "en",
-  disqusScript: process.env.DISCUSS_URL,
+  // disqusScript: process.env.DISCUSS_URL,https:
+  disqusScript: 'https://easybuoy.disqus.com/embed.js',
   pages: {
     home: "/",
     blog: "blog",
