@@ -90,9 +90,9 @@ class Header extends Component {
           <li>
             <Link to={Utils.resolvePageUrl(Config.pages.tag)}>Tags</Link>
           </li>
-          {/* <li>
-            <a href="https://ezekielekunola.com/">About</a>
-          </li> */}
+          <li>
+            <a href="https://ezekielekunola.com/">Portfolio</a>
+          </li>
         </ul>
         <ul>
           <li>
