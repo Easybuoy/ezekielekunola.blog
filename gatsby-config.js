@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
+    title: `Ezekiel Ekunola`,
+    name: `EE`,
     siteUrl: `https://blog.ezekielekunola.com`,
     description: `Tech Digests by Ezekiel Ekunola`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Welcome to Tech Digests by Ezekiel Ekunola.`,
       maxWidth: 652,
     },
     social: [
