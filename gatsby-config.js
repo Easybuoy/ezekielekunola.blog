@@ -28,6 +28,7 @@ module.exports = {
     ],
   },
   plugins: [
+    "gatsby-plugin-offline",
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
@@ -52,6 +53,13 @@ module.exports = {
         display: `standalone`,
         icon: `src/assets/favicon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.ANALYTICS_ID,
+        head: true
+      }
     },
   ],
 };
