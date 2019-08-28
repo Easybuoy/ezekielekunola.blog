@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Ezekiel Ekunola`,
-    name: `EE`,
+    name: `easybuoy`,
     siteUrl: `https://blog.ezekielekunola.com`,
     description: `Tech Digests by Ezekiel Ekunola`,
     hero: {
-      heading: `Welcome to Tech Digests by Ezekiel Ekunola.`,
+      heading: `Welcome to Tech Digests by Ezekiel`,
       maxWidth: 652,
     },
     social: [
