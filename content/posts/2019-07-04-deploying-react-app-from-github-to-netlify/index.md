@@ -71,5 +71,6 @@ If you've made use of environment variables in your project, you can also add th
 From the foregoing, we have seen and been able to demonstrate that hosting a react application through Github on Netlify is pretty simple and seamless, hence can be done in little or no time.
 
 
-If you have any questions or feedback about this article, feel free to reach out.
+If you have any questions or feedback, please feel free to reach out on [Twitter](https://twitter.com/easybuoy).
+
 Thanks for reading.

@@ -141,5 +141,6 @@ web: npm run server
 # Conclusion
 In this tutorial, we learned how to deploy a node application using Github and the Command-Line-Interface.
 
-If you have any questions or feedback about this article, feel free to reach out.
+If you have any questions or feedback, please feel free to reach out on [Twitter](https://twitter.com/easybuoy).
+
 Thanks for reading.
