@@ -48,7 +48,7 @@ module.exports = {
         short_name: `EE`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#fff`,
+        theme_color: `##111216`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
       },

@@ -1,7 +1,7 @@
 ---
 title: Testing Node API with Mocha & Chai
 author: Ezekiel Ekunola
-date: 2019-07-04
+date: 2019-08-22
 hero: ./images/preview.png
 excerpt: Learn about deploying a node app to heroku.
 ---
