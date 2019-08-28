@@ -35,7 +35,7 @@ After creating the application, under the deploy section, connect your Github ac
 
 Once deployed you can go ahead and click on view app, and that's it, we've successfully deployed using Github.
 
-> Note: Heroku looks for a `start` script in your package.json file and runs the script to start your application. Example of start script command below.
+**Note: Heroku looks for a `start` script in your package.json file and runs the script to start your application. Example of start script command below.**
 
 ```
 "start": "node app.js"
