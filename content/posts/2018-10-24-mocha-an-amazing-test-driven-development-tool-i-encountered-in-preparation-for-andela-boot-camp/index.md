@@ -6,7 +6,7 @@ hero: ./images/preview.png
 excerpt: Today I’ll be talking about this very interesting tool I encountered in preparation for [Andela](https://andela.com/) boot camp
 ---
 
-> Today I’ll be talking about this very interesting tool I encountered in preparation for [Andela](https://andela.com/) boot camp. In the course of the boot camp challenge and working with [Test Driven Development(TDD)](https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough), one of the awesome tools I’ve had to familiarize myself with is [Mocha](https://mochajs.org/).
+** Today I’ll be talking about this very interesting tool I encountered in preparation for [Andela](https://andela.com/) boot camp. In the course of the boot camp challenge and working with [Test Driven Development(TDD)](https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough), one of the awesome tools I’ve had to familiarize myself with is [Mocha](https://mochajs.org/).**
 
 
 ## What is Mocha?
@@ -103,7 +103,7 @@ assert.lengthOf(tea.flavors, 3);
 ```
 
 ## Conclusion
-> Testing is a very vital convention software developers must integrate into their project development process. While advising based on my experience, I will suggest Javascript developers should consider using Mocha when choosing a test framework as it is not only simple, it also has an amazing support.
+Testing is a very vital convention software developers must integrate into their project development process. While advising based on my experience, I will suggest Javascript developers should consider using Mocha when choosing a test framework as it is not only simple, it also has an amazing support.
 
 Thank you for reading.
 
