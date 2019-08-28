@@ -3,7 +3,7 @@ title: Andela Ethics - An Invaluable Valuable
 author: Ezekiel Ekunola
 date: 2018-10-23
 hero: ./images/preview.png
-excerpt: [Andela](https://andela.com) is an American company that specializes in training software developers,
+excerpt: Andela is an American company that specializes in training software developers,
 ---
 
 > [Andela](https://andela.com) is an American company that specializes in training software developers, its mission is to advance human potential by powering today’s teams and investing in tomorrow’s leaders. To accomplish this, [Andela](https://andela.com) was built on 4 core and important values which are EPIC.
