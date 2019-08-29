@@ -11,7 +11,7 @@ In this article, I would be integrating Continous Integration (CI) tools (Travis
 In my previous article, I talked about writing tests for node API with Mocha and Chai, and I going to be building on the project used in that article. Find the link to the article [here](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-chai)
 
 ## **What is Continous Integration**
-Continuous Integration (CI) is a software development practice of integrating regular changes to a project via version control after which automated test builds are run. Each commits triggers a build process, during which tests are run to determine if anything broke.
+Continuous Integration (CI) is a software development practice of integrating regular changes to a project via version control after which automated test builds are run. Each commits triggers a build process, during which tests are run to determine if anything is broken in the project.
 
 ## **Why is this necessary**
 CI tools are necessary for a project because it can help in quickly figuring out where bugs exist and also ensures quality code is been shipped/deployed.
