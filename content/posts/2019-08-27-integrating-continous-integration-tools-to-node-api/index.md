@@ -25,7 +25,7 @@ After creating a Travis CI account, connect your Github to your Travis CI accoun
 
 Then select the repository you want to connect to Travis CI.
 
-![Repository Connection](https://thepracticaldev.s3.amazonaws.com/i/1pwxp1wawu8ot0dnj5t6.gif)
+![Repository Connection](./images/connecting-travis.gif)
 
 The next step is to create a `.travis.yml` file in the root of your project.
 
@@ -41,7 +41,7 @@ node_js:
 
  After adding the configuration above to the created `.travis.yml` file, push changes to Github. After pushing, Travis CI would create a build and automatically run your tests. An example of a build is shown in the image below.
 
-![Sample Travis Build](https://thepracticaldev.s3.amazonaws.com/i/4rma2w1xtsc6w5iwaha3.gif)
+![Sample Travis Build](./images/travis-build.gif)
 
 #### Environment Variables
 If you've made use of environment variables in your project, you can also add them to Travis CI by following the steps shown in the image below
@@ -52,7 +52,7 @@ If you've made use of environment variables in your project, you can also add th
 #### Travis CI Badge
 You can add the Travis CI status badge to your project readme file by copying the markdown on Travis to your project readme file. An example is shown below.
 
-![Travis Badge Example](https://thepracticaldev.s3.amazonaws.com/i/zwmoo45do3hl5kgz98f3.gif)
+![Travis Badge Example](./images/travis-badge.gif)
 
 
 ## **Integrating Coveralls**
@@ -63,7 +63,7 @@ After creating a Coveralls account, connect your Github to your Coveralls accoun
 
 Then select the repository you want to connect to Coveralls. An example is shown in the image below
 
-![](https://thepracticaldev.s3.amazonaws.com/i/6qgd0eec9x2budrnsz0v.gif)
+![](./images/connecting-coveralls.gif)
 
 Back in our project, install the dependencies below 
 ```
@@ -76,7 +76,7 @@ After installing the dependencies, add the scripts below to the `package.json` f
 ```
 **Note: You can run coverage locally by running the command `npm run coverage` on your terminal. Example of coverage report below**
 
-![Coverage Example](https://thepracticaldev.s3.amazonaws.com/i/55oy1hxm0c2vkvrrdcgj.png)
+![Coverage Example](./images/coverage.png)
 
 Then edit the `.travis.yml` file by adding the command below
 ```
@@ -94,7 +94,7 @@ repo_token: as8dgas87dgadasdasd // repo_token is gotten from your coveralls dash
 #### Coveralls Badge
 You can add the Coverage status badge to your project readme file by copying the markdown on Travis to your project readme file. An example is shown below.
 
-![Coveralls Badge Example](https://thepracticaldev.s3.amazonaws.com/i/pbsmtvy7ay8fmooucumz.gif)
+![Coveralls Badge Example](./images/coverall-badge.gif)
 
 ## **Conclusion**
 In this article, we have been able to look at how to integrate CI tools in our projects, and why it is needed to have them in our project.
