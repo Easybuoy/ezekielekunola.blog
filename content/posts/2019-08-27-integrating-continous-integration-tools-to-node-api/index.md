@@ -6,7 +6,7 @@ hero: ./images/preview.png
 excerpt: Integrating Continous Integration (CI) tools (Travis CI & Coveralls) to a project.
 ---
 
-In this article, I would be integrating Continous Integration (CI) tools (Travis CI & Coveralls) to a project.
+In this article, I would be integrating Continous Integration (CI) tools (Travis CI & Coveralls) to a Node API.
 
 In my previous article, I talked about writing tests for node API with Mocha and Chai, and I going to be building on the project used in that article. Find the link to the article [here](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-chai)
 
