@@ -47,7 +47,7 @@ node_js:
 If you've made use of environment variables in your project, you can also add them to Travis CI by following the steps shown in the image below
 
 
-![Environment Variable Example](https://thepracticaldev.s3.amazonaws.com/i/f4y12guon350d4do5w0b.gif)
+![Environment Variable Example](./images/env-travis.gif)
 
 #### Travis CI Badge
 You can add the Travis CI status badge to your project readme file by copying the markdown on Travis to your project readme file. An example is shown below.
