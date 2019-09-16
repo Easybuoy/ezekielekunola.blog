@@ -1,5 +1,5 @@
 ---
-title: Node API setup with Postgres and Knex
+title: Setting up a Node API with Postgres and Knex
 author: Ezekiel Ekunola
 date: 2019-09-16
 hero: ./images/preview.png
