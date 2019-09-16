@@ -23,7 +23,7 @@ I would be using an online database called Elephantsql to set up my database. Yo
 After registering, create a database. An example is shown below.
 
 
-![](https://thepracticaldev.s3.amazonaws.com/i/5nula8dj0bpw1h3d7wsm.gif)
+![](./images/elephantsql.gif)
 
 
 ### **Setup Knex**
