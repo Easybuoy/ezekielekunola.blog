@@ -39,6 +39,6 @@ To contribute, create an account on [Hacktoberfest](https://hacktoberfest.digita
 You can also check your Hacktoberfest profile to see how you're doing.
 
 
-![Hacktoberfest Profile](./images/profile.png)
+![Hacktoberfest Profile](./images/hacktoberfest-profile.png)
 
 If you are looking to participate in Hacktoberfest, click [here](https://hacktoberfest.digitalocean.com) to register.
