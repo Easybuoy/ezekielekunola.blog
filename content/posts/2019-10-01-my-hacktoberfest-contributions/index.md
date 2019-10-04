@@ -16,7 +16,6 @@ EmojiScreen is a listing of movies, TV shows and musicals depicted through emoji
  Link to PR: https://github.com/brittanyrw/emojiscreen/pull/454
 
 
-
 #### Process name
 Process-name is an NPM package that allows you to get platform-specific application process name.
  
