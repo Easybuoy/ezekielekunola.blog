@@ -1,7 +1,7 @@
 ---
 title: My Hacktoberfest Contributions 😅
 author: Ezekiel Ekunola
-date: 2019-10-30
+date: 2019-10-01
 hero: ./images/preview.png
 excerpt: t's my first time participating in Hacktoberfest...
 ---
