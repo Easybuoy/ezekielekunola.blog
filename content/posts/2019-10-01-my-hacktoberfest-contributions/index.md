@@ -1,7 +1,7 @@
 ---
 title: My Hacktoberfest Contributions 😅
 author: Ezekiel Ekunola
-date: 2019-10-30
+date: 2019-10-01
 hero: ./images/preview.png
 excerpt: t's my first time participating in Hacktoberfest...
 ---
@@ -14,7 +14,6 @@ It's my first time participating in Hacktoberfest, and I am 75% done. I have mad
 EmojiScreen is a listing of movies, TV shows and musicals depicted through emojis.
 
  Link to PR: https://github.com/brittanyrw/emojiscreen/pull/454
-
 
 
 #### Process name
