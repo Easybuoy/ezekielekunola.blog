@@ -1,7 +1,7 @@
 ---
 title: Getting started with React & Apollo Client
 author: Ezekiel Ekunola
-date: 2019-09-16
+date: 2019-09-30
 hero: ./images/preview.png
 excerpt: What is Apollo Client?
 ---
