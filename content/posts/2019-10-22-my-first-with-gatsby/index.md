@@ -17,7 +17,7 @@ Gatsby is a free and open-source framework based on React that helps developers 
 - **Performance**: Gatsby makes fast applications. Gatsby follows Google's PRPL (Push, Render, Pre-Cache, Lazy-load) standards for building apps that work well even during unreliable network connections. Find out more on why Gatsby is fast [here](https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/) .
 
 - **Easily get started**: You can easily get started with Gatsby, as Gatsby has lots of starters that can get you easily started. Checkout Gatsby starters [here](https://www.gatsbyjs.org/starters/?v=2)
-- **Its basically React**: I had experience working with React already, so it was very easy for me to work with Gatsby.
+- **It's basically React**: I had experience working with React already, so it was very easy for me to work with Gatsby.
 
 - **Good Documentation**: Gatsby has good documentation, so it was easy for me to learn how to use packages and plugins like `gatsby-image`, `gatsby-source-filesystem` and so on when developing.
 
