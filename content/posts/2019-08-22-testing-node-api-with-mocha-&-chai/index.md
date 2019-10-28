@@ -174,7 +174,7 @@ describe("Server!", () => {
 ```
 
 At this point, your folder structure should look like the image below
-![Folder Structure](https://thepracticaldev.s3.amazonaws.com/i/bsb8hfofzkqr9m8fqkkx.png)
+![Folder Structure](./images/node-testing-file-structure.png)
 
 To run the test, run the command below on your terminal.
 
@@ -183,10 +183,10 @@ npm test
 ```
 
 Once the test is run, if the test passes, you should get a successful response on your terminal like the example shown below
-![Success Test](https://thepracticaldev.s3.amazonaws.com/i/jmx31vt0krx9odxyrbff.png)
+![Success Test](./images/success-test.jpeg)
 
 ...and if the test fails, an error response on your terminal like the example shown below
-![Error Test](https://thepracticaldev.s3.amazonaws.com/i/7dy3lxnj52d9inm11i7u.png)
+![Error Test](./images/error-test.png)
 
 **Find the code used in this project on [Github](https://github.com/Easybuoy/node-api-testing)**
 
