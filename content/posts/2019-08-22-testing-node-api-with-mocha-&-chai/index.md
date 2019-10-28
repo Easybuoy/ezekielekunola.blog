@@ -189,7 +189,9 @@ Once the test is run, if the test passes, you should get a successful response o
 ![Error Test](https://thepracticaldev.s3.amazonaws.com/i/7dy3lxnj52d9inm11i7u.png)
 
 **Find the code used in this project on [Github](https://github.com/Easybuoy/node-api-testing)**
+
 **Find more information on Mocha [here](https://mochajs.org/#getting-started)**
+
 **Find more information on Chai [here](https://www.chaijs.com/guide)**
 
 ### Conclusion
