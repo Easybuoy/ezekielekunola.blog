@@ -10,12 +10,13 @@ excerpt: I recently built my portfolio website using Gatsby...
 I recently built my [portfolio](https://ezekielekunola.com) website using Gatsby and I want to talk about my experience using Gatsby, what I enjoyed and the challenges I faced.
 
 ## **What is Gatsby**
-Gatsby is a free and open-source framework based on React that helps developers build blazing-fast websites and apps. Gatsby can be used to build static sites that are PWA, high performant and follows the web standard. Find more [here](https://www.gatsbyjs.org).
+Gatsby is a free and open-source framework based on React that helps developers build blazing-fast websites and apps. Gatsby can be used to build static sites that are PWA, high performant and follows the web standard. Read more about Gatsby [here](https://www.gatsbyjs.org).
 
 
 ### **What I enjoyed**
 - **Performance**: Gatsby makes fast applications. Gatsby follows Google's PRPL (Push, Render, Pre-Cache, Lazy-load) standards for building apps that work well even during unreliable network connections. Find out more on why Gatsby is fast [here](https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/) .
 
+- **Easily get started**: You can easily get started with Gatsby, as Gatsby has lots of starters that can get you easily started. Checkout Gatsby starters [here](https://www.gatsbyjs.org/starters/?v=2)
 - **Its basically React**: I had experience working with React already, so it was very easy for me to work with Gatsby.
 
 - **Good Documentation**: Gatsby has good documentation, so it was easy for me to learn how to use packages and plugins like `gatsby-image`, `gatsby-source-filesystem` and so on when developing.
@@ -36,11 +37,13 @@ Gatsby is a free and open-source framework based on React that helps developers 
 
 
 ## **Conclusion**
-In conclusion, developing with Gatsby has been fun and easy to work with, and proven to be 
+In conclusion, developing with Gatsby has been fun and easy to work with, and proven to be the perfect tool for me to develop my portfolio with.
 
 
 Find resources to learn more on Gatsby below
+
 https://www.gatsbyjs.org/docs/awesome-gatsby
+
 https://graphql.org/learn
 
 If you have any questions or feedback about this article, feel free to leave a comment.
