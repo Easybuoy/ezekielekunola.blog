@@ -22,6 +22,7 @@ Gatsby is a free and open-source framework based on React that helps developers 
 - **Good Documentation**: Gatsby has good documentation, so it was easy for me to learn how to use packages and plugins like `gatsby-image`, `gatsby-source-filesystem` and so on when developing.
 
 - **It uses GraphQL**: Gatsby uses GraphQL for managing data, and can be used for creating/generating pages, querying data and so on. I had always wanted to learn how to use GraphQL, Gatsby gave me an opportunity to do that. I learned how to use GraphQL when querying data on Gatsby. Learn more about why Gatsby uses Graphql [here](https://www.gatsbyjs.org/docs/why-gatsby-uses-graphql).
+![](./images/graphql.png)
 
 - **Plugins**: Gatsby has a plugin system that makes it easy to extend the functionality of Gatsby e.g Responsive image support, Typescript support. Find out more [here](https://www.gatsbyjs.org/plugins).
 
