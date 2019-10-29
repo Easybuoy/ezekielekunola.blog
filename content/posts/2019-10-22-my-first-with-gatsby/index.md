@@ -33,7 +33,7 @@ Gatsby is a free and open-source framework based on React that helps developers 
 - When developing my portfolio, I mostly got the error `TypeError: Cannot read property 'internal' of undefined` when starting the application. To solve this error, I had to delete the **`.cache`** directory at the root of the project and restart the application by running `gatsby develop` on the terminal.
  
 
-- I also ran into issues when using the GraphQL playground when developing, I changed my Graphql query in the code but was not reflecting on the Graphql playground until i had to refresh.
+- I also ran into issues when using the GraphQL playground when developing, I changed my Graphql query in the code but was not reflecting on the Graphql playground until I had to refresh.
 
 
 ## **Conclusion**
