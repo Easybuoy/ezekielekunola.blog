@@ -13,7 +13,6 @@ I recently built my [portfolio](https://ezekielekunola.com) website using Gatsby
 Gatsby is a free and open-source framework based on React that helps developers build blazing-fast websites and apps. Gatsby can be used to build static sites that are PWA, high performant and follows the web standard. Read more about Gatsby [here](https://www.gatsbyjs.org).
 
 ### **What I enjoyed**
-
 - **Performance**: Gatsby makes fast applications. Gatsby follows Google's PRPL (Push, Render, Pre-Cache, Lazy-load) standards for building apps that work well even during unreliable network connections. Find out more about why Gatsby is fast [here](https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/).
 
 - **It's React**: I had experience working with React already, so it was very easy for me to work with Gatsby as I was able to understand what was going on.
@@ -27,6 +26,7 @@ Gatsby is a free and open-source framework based on React that helps developers 
 - **Get started easily**: You can easily get started with Gatsby, as Gatsby has lots of starters that can get you easily started.
 
 - **Plugins**: Gatsby has a plugin system that makes it easy to extend the functionality of Gatsby e.g Responsive image support, Typescript support. Find out more [here](https://www.gatsbyjs.org/plugins).
+
 ### **Challenges I faced**
 
 - When developing my portfolio, I mostly got the error `TypeError: Cannot read property 'internal' of undefined` when starting the application. To solve this error, I had to delete the **`.cache`** directory at the root of the project and restart the application by running `gatsby develop` on the terminal.
@@ -38,7 +38,6 @@ I also ran into some other issues like querying for an image with a relative pat
 
 
 ## **Conclusion**
-
 In conclusion, developing with Gatsby has been fun and easy to work with, and proven to be the perfect tool for me to develop my portfolio with.
 
 Portfolio Link: http://ezekielekunola.com
