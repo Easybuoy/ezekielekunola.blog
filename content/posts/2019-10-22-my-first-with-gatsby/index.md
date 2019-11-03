@@ -22,17 +22,19 @@ Gatsby is a free and open-source framework based on React that helps developers 
 - **Good Documentation**: Gatsby has good documentation, so it was easy for me to learn how to use packages and plugins like `gatsby-image`, `gatsby-source-filesystem` and so on when developing.
 
 - **It uses GraphQL**: Gatsby uses GraphQL for managing data, and can be used for creating/generating pages, querying data and so on. I had always wanted to learn how to use GraphQL, Gatsby allowed me to do that. I learned how to use GraphQL when querying data on Gatsby. Learn more about why Gatsby uses Graphql [here](https://www.gatsbyjs.org/docs/why-gatsby-uses-graphql).
-  ![GraphQL playground](./images/graphql.png)
 
-- **Plugins**: Gatsby has a plugin system that makes it easy to extend the functionality of Gatsby e.g Responsive image support, Typescript support. Find out more [here](https://www.gatsbyjs.org/plugins).
+* **Plugins**: Gatsby has a plugin system that makes it easy to extend the functionality of Gatsby e.g Responsive image support, Typescript support. Find out more [here](https://www.gatsbyjs.org/plugins).
 
-- **Good Community**: Gatsby has a good community and learning resources, and starters to help you get started quickly, and I also got to find solutions to challenges I had quickly.
+* **Good Community**: Gatsby has a good community and learning resources, and starters to help you get started quickly, and I also got to find solutions to challenges I had quickly.
 
 ### **Challenges I faced**
 
 - When developing my portfolio, I mostly got the error `TypeError: Cannot read property 'internal' of undefined` when starting the application. To solve this error, I had to delete the **`.cache`** directory at the root of the project and restart the application by running `gatsby develop` on the terminal.
 
-* I also ran into issues when using the GraphQL playground when developing, I changed my Graphql query in the code but was not reflecting on the Graphql playground until I had to refresh.
+
+- I also ran into issues when using the GraphQL playground, I changed my Graphql query in the code but was not reflecting on the Graphql playground until I had to refresh.
+
+I also ran into some other issues like querying for an image with relative path, and sizing an image, which i solved by googling, documentationr and stackoverflow.
 
 ## **Conclusion**
 
@@ -44,8 +46,8 @@ https://www.gatsbyjs.org/docs/awesome-gatsby
 
 https://graphql.org/learn
 
-If you have any questions or feedback about this article, feel free to leave a comment.
+If you have any questions or feedback about this article, please feel free to reach out on [Twitter](https://twitter.com/easybuoy)
 
 Thanks for reading.
 
-This article was originally published on my [blog](https://blog.ezekielekunola.com).
+This article was originally published on my [blog](https://blog.ezekielekunola.com/my-first-experience-with-gatsby).
