@@ -40,4 +40,12 @@ You can also check your Hacktoberfest profile to see how you're doing.
 
 ![Hacktoberfest Profile](./images/hacktoberfest-profile.png)
 
+## **Update**
+Today (3rd October), I have completed the challenge, with 4 Pull requests merged. The last of them that I contributed to was *Oh My Zsh* terminal.
+
+#### Oh My Zsh
+Oh-My-Zsh is a delightful, open source, community-driven framework for managing your ZSH configuration.
+
+Link to PR: https://github.com/robbyrussell/oh-my-zsh/pull/8194 
+
 If you are looking to participate in Hacktoberfest, click [here](https://hacktoberfest.digitalocean.com) to register.
