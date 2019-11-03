@@ -34,20 +34,30 @@ Gatsby is a free and open-source framework based on React that helps developers 
 
 - I also ran into issues when using the GraphQL playground, I changed my Graphql query in the code but was not reflecting on the Graphql playground until I had to refresh.
 
-I also ran into some other issues like querying for an image with relative path, and sizing an image, which i solved by googling, documentationr and stackoverflow.
+I also ran into some other issues like querying for an image with relative path, and sizing an image with Gatsby Image, which i solved by googling, documentationr and stackoverflow.
 
 ## **Conclusion**
 
 In conclusion, developing with Gatsby has been fun and easy to work with, and proven to be the perfect tool for me to develop my portfolio with.
 
+Portfolio Link: http://ezekielekunola.com
+
 Find resources to learn more on Gatsby below
+
+https://www.gatsbyjs.org/
 
 https://www.gatsbyjs.org/docs/awesome-gatsby
 
+https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/
+
 https://graphql.org/learn
 
-If you have any questions or feedback about this article, please feel free to reach out on [Twitter](https://twitter.com/easybuoy)
+https://www.gatsbyjs.org/docs/awesome-gatsby-resources/
+
+https://www.gatsbyjs.org/starters/?v=2
+
+https://www.gatsbyjs.org/docs/why-gatsby-uses-graphql/
+
+If you have any questions or feedback about this article or my portfolio, please feel free to reach out on [Twitter](https://twitter.com/easybuoy)
 
 Thanks for reading.
-
-This article was originally published on my [blog](https://blog.ezekielekunola.com/my-first-experience-with-gatsby).
