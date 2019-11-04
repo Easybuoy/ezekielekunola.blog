@@ -8,11 +8,12 @@ excerpt: I recently built my portfolio website using Gatsby...
 
 I recently built my [portfolio](https://ezekielekunola.com) website using Gatsby and I want to talk about my experience using Gatsby, what I enjoyed and the challenges I faced.
 
-## **What is Gatsby**
+### **What is Gatsby**
 
 Gatsby is a free and open-source framework based on React that helps developers build blazing-fast websites and apps. Gatsby can be used to build static sites that are PWA, high performant and follows the web standard. Read more about Gatsby [here](https://www.gatsbyjs.org).
 
 ### **What I enjoyed**
+
 - **Performance**: Gatsby makes fast applications. Gatsby follows Google's PRPL (Push, Render, Pre-Cache, Lazy-load) standards for building apps that work well even during unreliable network connections. Find out more about why Gatsby is fast [here](https://www.gatsbyjs.org/blog/2017-09-13-why-is-gatsby-so-fast/).
 
 - **It's React**: I had experience working with React already, so it was very easy for me to work with Gatsby as I was able to understand what was going on.
@@ -34,7 +35,7 @@ Gatsby is a free and open-source framework based on React that helps developers 
 
 - I also ran into issues when using the GraphQL playground, I changed my Graphql query in the code but was not reflecting on the Graphql playground until I had to refresh the playground.
 
-I also ran into some other issues like querying for an image with a relative path and sizing an image with Gatsby Image, which i solved by googling, documentation and StackOverflow.
+I also ran into some other issues like querying for an image with a relative path and sizing an image with Gatsby Image, which i solved by googling, checking documentation and StackOverflow.
 
 
 ## **Conclusion**
