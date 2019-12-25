@@ -3,7 +3,7 @@ title: 2019 in review
 author: Ezekiel Ekunola
 date: 2019-12-31
 hero: ./images/preview.jpg
-excerpt: I recently built my portfolio website using Gatsby...
+excerpt: Today is the last day of 2019 ...
 ---
 
 Today is the last day of 2019 ...
@@ -21,7 +21,16 @@ At the beginning of the year, I was I'll for a while ...
 
 ## Blogging ✍🏾
 
+I started blogging this year, and I started writing on my experiences with tools and technologies as well as teaching on how to ...
 On ... I wrote my first ever blog on Deploying React app from Github to Netlify, it has been a way of giving back to the community
+
+Top 5 articles
+
+- [Testing Node API with Mocha & Chai](https://www.blog.ezekielekunola.com/testing-node-api-with-mocha-chai)
+- [Deploying React App from Github to Netlify](https://www.blog.ezekielekunola.com/deploying-react-app-from-github-to-netlify)
+- [Setting up a Node API with Postgres and Knex](https://www.blog.ezekielekunola.com/setting-up-a-node-api-with-postgres-and-knex)
+- [Getting started with React & Apollo Client](https://www.blog.ezekielekunola.com/getting-started-with-react-apollo-client)
+- [My first experience with Gatsby](https://www.blog.ezekielekunola.com/my-first-experience-with-gatsby)
 
 ## Jobs
 
