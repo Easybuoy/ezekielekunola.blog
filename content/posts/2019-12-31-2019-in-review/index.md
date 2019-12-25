@@ -37,10 +37,13 @@ I have never been a fan of reading books 😩, even though I've tried to. This y
 I contributed to several open source projects l, as well as participating in the hactoberfest challenge, which opened my eyes to many things
 I attended several tech conferences in Nigeria, and I hope to start speaking at conferences soon
 
-<figure>
-  <img src="https://thepracticaldev.s3.amazonaws.com/i/kqr90fvz3kjjcvbz99nu.jpeg" alt="Lambda Meetup">
-  <figcaption>Lambda Outing.</figcaption>
-</figure>
+![Lambda Meetup](./images/1.jpg)
+
+![Lambda Meetup](./images/3.jpeg)
+
+![Lambda Meetup](./images/4.jpg)
+
+![Lambda Meetup](./images/2.jpg)
 
 ## Plans for 2020
 
