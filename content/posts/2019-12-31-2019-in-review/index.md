@@ -33,11 +33,15 @@ Top 5 articles
 - [My first experience with Gatsby](https://www.blog.ezekielekunola.com/my-first-experience-with-gatsby)
 
 ## Jobs
-I met lots of great and amazing people this year.
-![Team Meetng](./images/5.png)
+I met and connected with lots of great and amazing people this year from around the world.
+
 
 - Andela
 - Lambda School
+
+- Started Team Lead Role at Lambda School
+
+![Team Meetng](./images/5.png)
 
 ## Reading 📖
 
