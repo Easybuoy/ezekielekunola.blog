@@ -19,10 +19,10 @@ At the beginning of the year, I was I'll for a while ...
 - Read a book (Eat a frog, by Brian Tracy)
 - Started blogging about my experiences
 
-## Blogging ✍🏾
+## Writing ✍🏾
 
 I started blogging this year, and I started writing on my experiences with tools and technologies as well as teaching on how to ...
-On ... I wrote my first ever blog on Deploying React app from Github to Netlify, it has been a way of giving back to the community
+On ... I started writing in July and have written a total of 10 articles this year, including this one. I wrote my first ever blog on Deploying React app from Github to Netlify, it has been a way of giving back to the community
 
 Top 5 articles
 
@@ -32,9 +32,16 @@ Top 5 articles
 - [Getting started with React & Apollo Client](https://www.blog.ezekielekunola.com/getting-started-with-react-apollo-client)
 - [My first experience with Gatsby](https://www.blog.ezekielekunola.com/my-first-experience-with-gatsby)
 
-## Jobs
+## Work & Personal Projects 👨🏾‍💻
+#### Personal Projects
 I met and connected with lots of great and amazing people this year from around the world.
 
+I built my [Portfolio](https://www.ezekielekunola.com) and [Blog](https://www.blog.ezekielekunola.com)
+
+
+
+#### Work
+I started the year working for Andela, but on September, I was part of the people Andela laid off ....
 
 - Andela
 - Lambda School
@@ -50,6 +57,11 @@ I have never been a fan of reading books 😩, even though I've tried to. This y
 ## Community
 
 I contributed to several open source projects l, as well as participating in the hactoberfest challenge, which opened my eyes to many things
+
+- [Gatsby](https://github.com/gatsbyjs/gatsby)
+- [Developer Portfolios](https://github.com/Easybuoy/developer-portfolios)
+- [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+
 I attended several tech conferences in Nigeria, and I hope to start speaking at conferences soon
 
 ![Lambda Meetup](./images/1.jpg)
@@ -60,6 +72,8 @@ I attended several tech conferences in Nigeria, and I hope to start speaking at 
 
 ![Lambda Meetup](./images/2.jpg)
 
+
+## Life 
 ## Plans for 2020
 
 - Contribute more to open source
