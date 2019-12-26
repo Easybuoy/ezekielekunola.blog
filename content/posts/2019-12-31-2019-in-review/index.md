@@ -17,7 +17,6 @@ At the beginning of the year, I was I'll for a while ...
 - got sick
 - got lambda via Andela
 - released by Andela
-
 - Read a book (Eat a frog, by Brian Tracy)
 - Started blogging about my experiences
 
@@ -43,6 +42,7 @@ I met and connected with lots of great and amazing people this year from around 
 I built my [Portfolio](https://www.ezekielekunola.com) and [Blog](https://www.blog.ezekielekunola.com)
 
 ![Team Meetng](./images/graph.png)
+
 #### Work
 
 I started the year working for Andela, but on September, I was part of the people Andela laid off ....
@@ -53,10 +53,6 @@ I started the year working for Andela, but on September, I was part of the peopl
 - Started Team Lead Role at Lambda School
 
 ![Team Meetng](./images/5.png)
-
-## Reading 📖
-
-I have never been a fan of reading books 😩, even though I've tried to. This year, I managed to finish reading a book titled .... My target next year is to read at least 5 books.
 
 ## Community
 
@@ -78,6 +74,10 @@ I attended several tech conferences in Nigeria, and I hope to start speaking at 
 ![Lambda Meetup](./images/2.jpg)
 
 ## Life
+
+#### Reading 📖
+
+I have never been a fan of reading books 😩, even though I've tried to. This year, I managed to finish reading a book titled .... My target next year is to read at least 5 books.
 
 ## Plans for 2020
 
