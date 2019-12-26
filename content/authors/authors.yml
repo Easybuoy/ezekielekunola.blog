@@ -1,0 +1,12 @@
+- name: Ezekiel Ekunola
+  bio: |
+    Full-Stack Web Application developer with a passion for web technologies.
+  avatar: ./avatars/ezekiel-ekunola.png
+  featured: true
+  social:
+    - name: github
+      url: https://github.com/easybuoy
+    - name: twitter
+      url: https://twitter.com/easybuoy
+    - name: linkedin
+      url: https://www.linkedin.com/in/easybuoy/
