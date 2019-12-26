@@ -6,6 +6,8 @@ hero: ./images/preview.jpg
 excerpt: Today is the last day of 2019 ...
 ---
 
+Sometime this year, I read [Prosper's 2018 in review](https://medium.com/@unicodeveloper/2018-in-review-shattering-expectations-9418f2d720cc) and it inspired me to alot and to accomplish alot, and is also the reason I've decided to also do my year review
+
 Today is the last day of 2019 ...
 2019 has been a great year for me, but it did not start with roses
 
@@ -33,14 +35,16 @@ Top 5 articles
 - [My first experience with Gatsby](https://www.blog.ezekielekunola.com/my-first-experience-with-gatsby)
 
 ## Work & Personal Projects 👨🏾‍💻
+
 #### Personal Projects
+
 I met and connected with lots of great and amazing people this year from around the world.
 
 I built my [Portfolio](https://www.ezekielekunola.com) and [Blog](https://www.blog.ezekielekunola.com)
 
-
-
+![Team Meetng](./images/graph.png)
 #### Work
+
 I started the year working for Andela, but on September, I was part of the people Andela laid off ....
 
 - Andela
@@ -56,6 +60,7 @@ I have never been a fan of reading books 😩, even though I've tried to. This y
 
 ## Community
 
+Mentored in the Andela DevCTraining
 I contributed to several open source projects l, as well as participating in the hactoberfest challenge, which opened my eyes to many things
 
 - [Gatsby](https://github.com/gatsbyjs/gatsby)
@@ -72,8 +77,8 @@ I attended several tech conferences in Nigeria, and I hope to start speaking at 
 
 ![Lambda Meetup](./images/2.jpg)
 
+## Life
 
-## Life 
 ## Plans for 2020
 
 - Contribute more to open source
