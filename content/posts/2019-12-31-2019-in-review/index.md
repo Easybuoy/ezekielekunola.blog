@@ -6,7 +6,7 @@ hero: ./images/preview.jpg
 excerpt: Today is the last day of 2019 ...
 ---
 
-Sometime this year, I read [Prosper's 2018 in review](https://medium.com/@unicodeveloper/2018-in-review-shattering-expectations-9418f2d720cc) and it inspired me to alot and to accomplish alot, and is also the reason I've decided to also do my year review
+Sometime this year, I read [Prosper's 2018 in review](https://medium.com/@unicodeveloper/2018-in-review-shattering-expectations-9418f2d720cc) and it inspired me to do and accomplish alot, and is also the reason I've decided to also write my year review as well.
 
 Today is the last day of 2019 ...
 2019 has been a great year for me, but it did not start with roses
