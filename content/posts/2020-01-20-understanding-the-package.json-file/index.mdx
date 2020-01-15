@@ -24,9 +24,7 @@ The name property is a required field in the `package.json` file, it represents 
 - should not start with underscore(\_) or dot(.)
 
 ```json
-{
   "name": "Storemanager"
-}
 ```
 
 ### version
@@ -35,9 +33,7 @@ The version is also a required field in the `package.json` file. The property de
 The rule required for the version field is that it needs to follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning) e.g 1.0.2
 
 ```json
-{
   "version": "1.0.0"
-}
 ```
 
 ### description
@@ -45,9 +41,7 @@ The rule required for the version field is that it needs to follow the [semantic
 The description property is used in describing and providing more information about the project.
 
 ```json
-{
   "description": "Storemanager is a project that..."
-}
 ```
 
 ### engines
@@ -62,9 +56,29 @@ The description property is used in describing and providing more information ab
 
 ### main
 
-The main property serves as the entry point of your application,
+The main property serves as the entry point of your application and should point to the file that serves as the entry point to your application.
+
+```json
+  "main": "app.js"
+```
 
 ### private
+
+### license
+
+This property denotes the type of license that's being used by the project
+
+```json
+"license": "MIT"
+```
+
+### author
+
+This property denotes the creator/owner of the project
+
+```json
+"author": "Ezekiel Ekunola"
+```
 
 ### repository
 
