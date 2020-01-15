@@ -6,15 +6,22 @@ hero: ./images/2019.jpeg
 excerpt: ...
 ---
 
-### **What is a `package.json` file**
+## **What is a package.json file**
 
 A package.json file is a file that exists in the root of a project and it holds metadata relevant to the project and is mostly used for managing dependencies of the project, as well as scripts.
 
-### **Properties of a package.json file**
+## Why is the package.json file needed
 
-#### name
+## **Properties of a package.json file**
 
-The name property is a required field in the `package.json` file, it represents the name of the project.
+### name
+
+The name property is a required field in the `package.json` file, it represents the name of the project. There are rules you need to follow when specifying a name for your project in the package.json file.
+
+- must be lowercase
+- must be one word
+- can contain hyphens and unserscores
+- should not start with underscore(\_) or dot(.)
 
 ```json
 {
@@ -22,19 +29,20 @@ The name property is a required field in the `package.json` file, it represents 
 }
 ```
 
-#### version
+### version
 
 The version is also a required field in the `package.json` file. The property denotes the current version of the module for the project.
+The rule required for the version field is that it needs to follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning) e.g 1.0.2
 
 ```json
 {
-  "version": "1.0"
+  "version": "1.0.0"
 }
 ```
 
-#### description
+### description
 
-The description property is used in describing the project.
+The description property is used in describing and providing more information about the project.
 
 ```json
 {
@@ -42,25 +50,27 @@ The description property is used in describing the project.
 }
 ```
 
-#### engines
+### engines
 
-#### dependencies
+### dependencies
 
-#### devdependencies
+### devdependencies
 
-#### scripts
+### scripts
 
-#### private
+### private
 
-#### main
+### main
 
 The main property serves as the entry point of your application,
 
-#### private
+### private
 
-#### browsersList
+### repository
 
-### **Creating a `package.json` file**
+### browsersList
+
+## **Creating a `package.json` file**
 
 There are two ways of creating a `package.json` file.
 
