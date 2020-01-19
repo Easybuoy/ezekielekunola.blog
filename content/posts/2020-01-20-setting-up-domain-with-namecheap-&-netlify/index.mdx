@@ -1,0 +1,42 @@
+---
+title: Setting up Domain with Namecheap & Netlify
+author: Ezekiel Ekunola
+date: 2020-01-20
+hero: ./images/namecheap-dns.png 
+excerpt: Early this year, I read...
+---
+In this article, I would be showing how to connect a Namecheap domain to Netlify
+
+First step is to have [Netlify](https://www.netlify.com) and [Namecheap](https://www.namecheap.com) accounts setup.
+
+Once that has been done, go ahead and purchase your domain on [Namecheap].
+
+It is assumed that you have an application on [Netlify] and that you've also purchased your domain on [Namecheap].
+
+> If you've not done the above yet, please take the time to do them before continue reading this article.
+
+
+After purchasing your domain on [Namecheap], navigate to your dashboard you should see the purchased domain there. Click on the manage button on the far right corner of the domain.
+
+![Namecheap Dashboard](./images/namecheap-dashboard.png)
+
+Scroll down to the `Nameservers` section, click on the dropdown and change it from `Namecheap BasicDNS` to `Custom DNS`. See example in the image below
+
+![Namecheap DNS](./images/namecheap-dns.png) 
+
+Then navigate to your application on Netlify. Click on Domain Settings
+
+![Domain Settings](./images/netlify-domain-settings.png) 
+
+![Add custom domain](./images/netlify-add-custom-domain.png) 
+
+
+
+- configure dns on netlify
+- add dns config to namecheap
+-wait for propagation
+- voalla, hosting done.
+- deploy
+
+
+And we're done. , You would need to wait for 1–5 minutes for Netlify to propagate, after that your web page can now be accessed by the custom domain. Netlify will issue your domain free SSL certificates.
