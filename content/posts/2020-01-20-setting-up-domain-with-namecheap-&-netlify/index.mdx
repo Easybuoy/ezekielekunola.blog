@@ -32,15 +32,23 @@ Then add your domain and click on the verify button. Netlify would try to valida
 
 ![Add domain name](./images/netlify-add-domain-name.png)
 
-
+After adding the domain, click on the 3dots to the right of the domain you just added, and select `Set Up Netlify DNS`. See example in the image below
 Once that has been done, you can then get the dns on Netlify.
 
+![Netlify DNS Setup](./images/netlify-dns-setup.png)
 
-Navigate back to Namecheap, and add the dns servers there one at a time. After adding them, click on the tick icon to the right to save them.
+Click though till you get to the point where Netlify shows a list of nameservers. See example in the images below
+
+![Netlify Dns Setup](./images/netlify-dns-setup-1.png)
+
+![Netlify Dns Setup](./images/netlify-dns-setup-2.png)
+
+![Netlify Dns Setup](./images/netlify-dns-setup-3.png)
+
+Navigate back to Namecheap, and copy each of the dns servers one at a time to the Nameservers section of Namecheap. After adding them, click on the tick icon to the right to save them. See example in the image below
 
 ![Namecheap Custom Dns](./images/namecheap-custom-dns.png)
 
-
-And that's it, we're done. You would need to wait for 1–5 minutes for Netlify to propagate, after that your web page can now be accessed by the custom domain. 
+And that's it, we're done. You would need to wait for 1–5 minutes for Netlify to propagate, after that your web page can now be accessed by the custom domain.
 
 Netlify will issue your domain free SSL certificates, so you would not need to worry about setting up HTTPS on your own.
