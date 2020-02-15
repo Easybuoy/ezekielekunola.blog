@@ -6,11 +6,59 @@ hero: ./images/2019.jpeg
 excerpt: ...
 ---
 
+Understanding the package.json file is important as a Javascript developer, because
+
 ## **What is a package.json file**
 
 A package.json file is a file that exists in the root of a project and it holds metadata relevant to the project and is mostly used for managing dependencies of the project, as well as scripts.
 
 ## Why is the package.json file needed
+
+## **Creating a `package.json` file**
+
+There are two ways of creating a `package.json` file.
+
+- **Npm or Yarn**
+
+  To create the package.json file with **npm**, run `npm init` on your terminal. 
+
+  > Note: To use this method, you need to have [Node]() installed on your system.
+
+  To create the package.json file with **yarn**, run `yarn init` on your terminal.
+
+  > Note: To use the yarn method, you need to have [Node]() and [Yarn]() installed on your system.
+
+  After running the command, it should ask for some information about the project and generate a `package.json` file in the root of your project. The generated file should look like the example below.
+
+  ```json
+  {
+    "name": "storemanager",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  ```
+
+- **Manually**
+
+  To create file manually, create a `package.json` file manually in the root of the project, and add an empty object with the required properties, which are name and version.
+  It should look like the example below.
+
+  ```json
+  {
+    "name": "storemanager",
+    "version": "1.0.0"
+  }
+  ```
 
 ## **Properties of a package.json file**
 
@@ -24,7 +72,7 @@ The name property is a required field in the `package.json` file, it represents 
 - should not start with underscore(\_) or dot(.)
 
 ```json
-  "name": "Storemanager"
+  "name": "storemanager"
 ```
 
 ### version
@@ -83,17 +131,5 @@ This property denotes the creator/owner of the project
 ### repository
 
 ### browsersList
-
-## **Creating a `package.json` file**
-
-There are two ways of creating a `package.json` file.
-
-- npm or yarn
-  For `npm`, run `npm init` on your terminal
-
-  > Note: To use this method, you need to have [Node]() installed on your system.
-
-- Manually
-  To create manually, create a `package.json` file manually in the root of the project, and add an empty object.
 
 ## Conclusion
