@@ -94,6 +94,15 @@ The description property is used in describing and providing more information ab
 
 ### engines
 
+The engines property is an object of key/value pairs which is used to denote/specify the version of the libraries and runtimes on which the application should run on.
+
+```json
+ "engines": {
+    "npm": "6.10.0",
+    "node": "10.14.1"
+  }
+```
+
 ### dependencies
 
 The dependencies property denotes the list of the required modules/packages for your application to function. After installing a dependency, it is added to the dependencies list.
@@ -122,6 +131,7 @@ The devDependencies property denotes the list of modules/packages that are not r
     "nodemon": "^1.19.1",
   }
 ```
+
 To install a devDependency, run **`npm i package --save-dev`** or **`npm install package -D`** on your terminal. Where package is the name of the package you are trying to install.
 
 For example, to install **chai** devDependency, run **`npm install chai --save-dev`** on your terminal.
@@ -152,9 +162,11 @@ The main property serves as the entry point of your application and should point
 
 ### private
 
+The private keyword is false by default, but can be set to true to prevent the application/package to be published.
 
-
-### private
+```json
+  "private": true
+```
 
 ### license
 
@@ -174,7 +186,19 @@ This property denotes the creator/owner of the project
 
 ### repository
 
+The repository keyword is an object of key/value pairs which is used to set the version control system being used to manage the application. You can specify the type of version control being used,
+the url to the repository, as well as an optional directory within the repository.
+
+```json
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easybuoy/package.json-mastery.git"
+  }
+```
+
 ### browsersList
+
+#### Custom Properties
 
 ## Package-lock.json
 
