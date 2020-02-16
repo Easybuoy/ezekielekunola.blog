@@ -20,7 +20,7 @@ There are two ways of creating/generating a `package.json` file.
 
 - **Npm or Yarn**
 
-  To create the package.json file with **npm**, run `npm init` on your terminal. 
+  To create the package.json file with **npm**, run `npm init` on your terminal.
 
   > Note: To use this method, you need to have [Node]() installed on your system.
 
@@ -96,11 +96,51 @@ The description property is used in describing and providing more information ab
 
 ### dependencies
 
-### devdependencies
+The dependencies property denotes the list of the required modules/packages for your application to function. After installing a dependency, it is added to the dependencies list.
+
+```json
+"dependencies": {
+  "bcryptjs": "^2.4.3",
+  "cors": "^2.8.5",
+  "dotenv": "^6.1.0",
+  "express": "^4.16.4",
+}
+```
+
+To install a dependency, run **`npm i package`** or **`npm install package`** on your terminal. Where package is the name of the package you are trying to install.
+
+For example, to install **axios** dependency, run **`npm install axios`** on your terminal.
+
+### devDependencies
+
+The devDependencies property denotes the list of modules/packages that are not required for your application to function. They are also known as development dependencies.
+
+```json
+ "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+  }
+```
+To install a devDependency, run **`npm i package --save-dev`** or **`npm install package -D`** on your terminal. Where package is the name of the package you are trying to install.
+
+For example, to install **chai** devDependency, run **`npm install chai --save-dev`** on your terminal.
 
 ### scripts
 
-### private
+The script property takes an object of key/value pairs. Each script can be used in performing different sets of tasks, like building, testing, linting the application.
+You can run the scripts by running **`npm run scriptname`**, or **`yarn scriptname`** on the terminal.
+
+```json
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "jest",
+    "lint": "eslint ./server",
+  }
+```
+
+For example, to run the **dev** script in the example above, run **`npm run dev`** or **`yarn dev`** on your terminal.
 
 ### main
 
@@ -109,6 +149,10 @@ The main property serves as the entry point of your application and should point
 ```json
   "main": "app.js"
 ```
+
+### private
+
+
 
 ### private
 
@@ -131,5 +175,7 @@ This property denotes the creator/owner of the project
 ### repository
 
 ### browsersList
+
+## Package-lock.json
 
 ## Conclusion
