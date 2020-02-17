@@ -92,7 +92,7 @@ The description property is used in describing and providing more information ab
 
 ### engines
 
-The engines property is an object of key/value pairs that are used to denote/specify the version of the libraries and runtimes on which the application should run.
+The engines property is a json object of key/value pairs that are used to denote/specify the version of the libraries and runtimes on which the application should run.
 
 ```json
  "engines": {
@@ -136,7 +136,7 @@ For example, to install **chai** devDependency, run **`npm install chai --save-d
 
 ### scripts
 
-The script property takes an object of key/value pairs. Each script can be used in performing different sets of tasks, like building, testing, linting the application.
+The script property takes a json object of key/value pairs. Each script can be used in performing different sets of tasks, like building, testing, linting the application.
 You can run the scripts by running **`npm run scriptname`**, or **`yarn scriptname`** on the terminal.
 
 ```json
@@ -192,7 +192,7 @@ This property denotes the creator/owner of the project
 
 ### repository
 
-The repository keyword is an object of key/value pairs that are used to set the version control system being used to manage the application. You can specify the type of version control being used,
+The repository keyword is a json object of key/value pairs that are used to set the version control system being used to manage the application. You can specify the type of version control being used,
 the URL to the repository, as well as an optional directory within the repository.
 
 ```json
