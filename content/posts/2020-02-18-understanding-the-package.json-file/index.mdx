@@ -24,7 +24,7 @@ There are two ways of creating/generating a `package.json` file.
 
   To create the package.json file with **yarn**, run `yarn init` on your terminal.
 
-  > To use the yarn method, you need to have [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable`) installed on your system.
+  > To use the yarn method, you need to have [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) installed on your system.
 
   After running the command, it should ask for some information about the project and generate a `package.json` file in the root of your project. The generated file should look like the example below.
 
@@ -48,7 +48,7 @@ There are two ways of creating/generating a `package.json` file.
   Note: You can also run **`npm init -y`** or **`yarn init -y`** to generate the **`package.json`** file with default values.
 - **Manually**
 
-  To create file manually, create a `package.json` file manually in the root of the project, and add an empty object with the required properties, which are name and version.
+  To create the file manually, create a `package.json` file manually in the root of the project, and add an empty object with the required properties, which are name and version.
   It should look like the example below.
 
   ```json
@@ -66,8 +66,8 @@ The name property is a required field in the `package.json` file, it represents 
 
 - must be lowercase
 - must be one word
-- can contain hyphens and unserscores
-- should not start with underscore(\_) or dot(.)
+- can contain hyphens and underscores
+- should not start with an underscore(\_) or dot(.)
 
 ```json
   "name": "package.json-mastery"
@@ -92,7 +92,7 @@ The description property is used in describing and providing more information ab
 
 ### engines
 
-The engines property is an object of key/value pairs which is used to denote/specify the version of the libraries and runtimes on which the application should run on.
+The engines property is an object of key/value pairs that are used to denote/specify the version of the libraries and runtimes on which the application should run.
 
 ```json
  "engines": {
@@ -114,7 +114,7 @@ The dependencies property denotes the list of the required modules/packages for 
 }
 ```
 
-To install a dependency, run **`npm i package`** or **`npm install package`** on your terminal. Where package is the name of the package you are trying to install.
+To install a dependency, run **`npm i package`** or **`npm install package`** on your terminal. Where the package is the name of the package you are trying to install.
 
 For example, to install **axios** dependency, run **`npm install axios`** on your terminal.
 
@@ -130,7 +130,7 @@ The devDependencies property denotes the list of modules/packages that are not r
   }
 ```
 
-To install a devDependency, run **`npm i package --save-dev`** or **`npm install package -D`** on your terminal. Where package is the name of the package you are trying to install.
+To install a devDependency, run **`npm i package --save-dev`** or **`npm install package -D`** on your terminal. Where the package is the name of the package you are trying to install.
 
 For example, to install **chai** devDependency, run **`npm install chai --save-dev`** on your terminal.
 
@@ -168,7 +168,7 @@ The homepage property is used to set the landing page for the application/packag
 
 ### private
 
-The private property is false by default, but can be set to true to prevent the application/package to be published.
+The private property is false by default but can be set to true to prevent the application/package to be published.
 
 ```json
   "private": true
@@ -192,8 +192,8 @@ This property denotes the creator/owner of the project
 
 ### repository
 
-The repository keyword is an object of key/value pairs which is used to set the version control system being used to manage the application. You can specify the type of version control being used,
-the url to the repository, as well as an optional directory within the repository.
+The repository keyword is an object of key/value pairs that are used to set the version control system being used to manage the application. You can specify the type of version control being used,
+the URL to the repository, as well as an optional directory within the repository.
 
 ```json
 "repository": {
@@ -240,7 +240,7 @@ Find an example of a custom property for **`Jest`** below.
 
 In this article, we've been able to see what a `package.json` file is, how to create it and the different properties and their use case.
 
-Throughout the course of this article, I made use of `npm` commands for showing examples of how to do stuffs, if you make use of `yarn` check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn cli` commands.
+Throughout the course of this article, I made use of `npm` commands for showing examples of how to do perform specific tasks, if you make use of `yarn` check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn CLI` commands.
 
 If you have any questions or feedback about this article, feel free to leave a comment.
 
