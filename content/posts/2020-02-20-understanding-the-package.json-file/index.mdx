@@ -226,6 +226,18 @@ The keywords property is an array of keywords that helps in identifying your pro
 
 ## Custom Properties
 
+The package.json file can also be used for package specific commands like Babel, ESLint, Jest and lots more. You can find the usage in the package documentation.
+
+Find an example of a custom property for **`Jest`** below.
+
+```json
+  "jest": {
+      "snapshotSerializers": [
+        "enzyme-to-json/serializer"
+      ]
+    },
+```
+
 ## Conclusion
 
 In this article, we've been able to see what a `package.json` file is, how to create it and the different properties and their use case.
