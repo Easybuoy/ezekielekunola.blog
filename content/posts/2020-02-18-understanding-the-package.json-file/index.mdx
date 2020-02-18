@@ -8,9 +8,10 @@ excerpt: What is a package.json file
 
 ## **What is a package.json file**
 
-A package.json file exists at the root of a project and holds metadata relevant to the project. It is mostly used for managing the project's dependencies and scripts.
+A package.json file is a JSON file that exists at the root of a project and holds metadata relevant to the project. It is mostly used for managing the project's dependencies and scripts.
 
 ## Why is the package.json file needed
+The package.json file is needed and used by NPM or Yarn to store the names and versions of packages installed.
 
 ## **Creating a `package.json` file**
 
@@ -220,8 +221,6 @@ The keywords property is an array of keywords that helps in identifying your pro
   "keywords": ["node", "javascript", "npm", "yarn"]
 ```
 
-### browsersList
-
 ## Custom Properties
 
 The package.json file can also be used for package specific commands like Babel, ESLint, Jest and lots more. You can find the usage in the package documentation.
@@ -239,6 +238,8 @@ Find an example of a custom property for **`Jest`** below.
 ## Conclusion
 
 In this article, we've been able to see what a `package.json` file is, how to create it and the different properties and their use case.
+
+There are still so much more properties that can be specified in the package.json file, if you want to go in-depth, check [here](https://docs.npmjs.com/files/package.json).
 
 Throughout the course of this article, I made use of `npm` commands for showing examples of how to do perform specific tasks, if you make use of `yarn` check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn CLI` commands.
 
