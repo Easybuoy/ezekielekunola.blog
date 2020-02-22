@@ -8,10 +8,7 @@ excerpt: What is a package.json file
 
 ## **What is a package.json file**
 
-A package.json file is a JSON file that exists at the root of a project and holds metadata relevant to the project. It is mostly used for managing the project's dependencies and scripts.
-
-## Why is the package.json file needed
-The package.json file is needed and used by NPM or Yarn to store the names and versions of packages installed.
+A package.json file is a JSON file that exists at the root of a Javascript/Node project. It holds metadata relevant to the project, and is used for managing the project's dependencies, scripts, version and a whole lot more.
 
 ## **Creating a `package.json` file**
 
@@ -26,6 +23,8 @@ There are two ways of creating/generating a `package.json` file.
   To create the package.json file with **yarn**, run `yarn init` on your terminal.
 
   > To use the yarn method, you need to have [Node](https://nodejs.org) and [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) installed on your system.
+
+  **Note: Throughout the course of this article, I made use of `npm` commands for showing examples of how to do perform specific tasks, if you prefer making use of `yarn`, check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn CLI` commands.**
 
   After running the command, it should ask for some information about the project and generate a `package.json` file in the root of your project. The generated file should look like the example below.
 
@@ -46,7 +45,9 @@ There are two ways of creating/generating a `package.json` file.
     "license": "ISC"
   }
   ```
+
   Note: You can also run **`npm init -y`** or **`yarn init -y`** to generate the **`package.json`** file with default values.
+
 - **Manually**
 
   To create the file manually, create a `package.json` file manually in the root of the project, and add an empty object with the required properties, which are name and version.
@@ -232,16 +233,14 @@ Find an example of a custom property for **`Jest`** below.
       "snapshotSerializers": [
         "enzyme-to-json/serializer"
       ]
-    },
+    }
 ```
 
 ## Conclusion
 
-In this article, we've been able to see what a `package.json` file is, how to create it and the different properties and their use case.
+In this article, we've been able to see what a `package.json` file is, how to create it, the different properties and their use cases.
 
 There are still so much more properties that can be specified in the package.json file, if you want to go in-depth, check [here](https://docs.npmjs.com/files/package.json).
-
-Throughout the course of this article, I made use of `npm` commands for showing examples of how to do perform specific tasks, if you make use of `yarn` check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn CLI` commands.
 
 If you have any questions or feedback about this article, feel free to leave a comment.
 
