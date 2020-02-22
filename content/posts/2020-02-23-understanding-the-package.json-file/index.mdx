@@ -1,0 +1,247 @@
+---
+title: Understanding the package.json file
+author: Ezekiel Ekunola
+date: 2020-02-23
+hero: ./images/preview.png
+excerpt: What is a package.json file
+---
+
+## **What is a package.json file**
+
+A package.json is a JSON file that exists at the root of a Javascript/Node project. It holds metadata relevant to the project and it is used for managing the project's dependencies, scripts, version and a whole lot more.
+
+## **Creating a `package.json` file**
+
+There are two ways of creating/generating a `package.json` file.
+
+- **Npm or Yarn**
+
+  To create the package.json file with **npm**, run `npm init` on your terminal.
+
+  > To use this method, you need to have [Node](https://nodejs.org) installed on your system.
+
+  To create the package.json file with **yarn**, run `yarn init` on your terminal.
+
+  > To use the yarn method, you need to have [Node](https://nodejs.org) and [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) installed on your system.
+
+  **Note: Throughout the course of this article, I would make use of `npm` commands for showing examples of how to do perform specific tasks, if you prefer making use of `yarn`, check [here](https://classic.yarnpkg.com/en/docs/cli/) for the `yarn CLI` commands.**
+
+  After running the command, it should ask for some information about the project and generate a `package.json` file in the root of your project. The generated file should look like the example below.
+
+  ```json
+  {
+    "name": "storemanager",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  ```
+
+  Note: You can also run **`npm init -y`** or **`yarn init -y`** to generate the **`package.json`** file with default values.
+
+- **Manually**
+
+  To create the file manually, create a `package.json` file manually in the root of the project, and add an empty object with the required properties, which are name and version.
+  It should look like the example below.
+
+  ```json
+  {
+    "name": "storemanager",
+    "version": "1.0.0"
+  }
+  ```
+
+## **Properties of a package.json file**
+
+### name
+
+The name property is a required field in the `package.json` file, it represents the name of the project. There are rules you need to follow when specifying a name for your project in the package.json file.
+
+- must be lowercase
+- must be one word
+- can contain hyphens and underscores
+- should not start with an underscore(\_) or dot(.)
+
+```json
+  "name": "package.json-mastery"
+```
+
+### version
+
+The version is also a required field in the `package.json` file. The property denotes the current version of the module for the project.
+The rule required for the version field is that it needs to follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning) e.g 1.0.2
+
+```json
+  "version": "1.0.0"
+```
+
+### description
+
+The description property is used in describing and providing more information about the project.
+
+```json
+  "description": "Mastery of the package.json file"
+```
+
+### engines
+
+The engines property is a JSON object of key/value pairs that are used to denote/specify the version of the libraries and runtimes on which the application should run.
+
+```json
+ "engines": {
+    "npm": "6.10.0",
+    "node": "10.14.1"
+  }
+```
+
+### dependencies
+
+The dependencies property denotes the list of the required modules/packages for your application to function. After installing a dependency, it is added to the dependencies list.
+
+```json
+"dependencies": {
+  "bcryptjs": "^2.4.3",
+  "cors": "^2.8.5",
+  "dotenv": "^6.1.0",
+  "express": "^4.16.4",
+}
+```
+
+To install a dependency, run **`npm i package`** or **`npm install package`** on your terminal. Where the package is the name of the package you are trying to install.
+
+For example, to install **axios** dependency, run **`npm install axios`** on your terminal.
+
+### devDependencies
+
+The devDependencies property denotes the list of modules/packages that are not required for your application to function. They are also known as development dependencies.
+
+```json
+ "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+  }
+```
+
+To install a devDependency, run **`npm i package --save-dev`** or **`npm install package -D`** on your terminal. Where the package is the name of the package you are trying to install.
+
+For example, to install **chai** devDependency, run **`npm install chai --save-dev`** on your terminal.
+
+### scripts
+
+The script property takes a JSON object of key/value pairs. Each script can be used in performing different sets of tasks, like building, testing, linting the application.
+You can run the scripts by running **`npm run scriptname`**, or **`yarn scriptname`** on the terminal.
+
+```json
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "jest",
+    "lint": "eslint ./server",
+  }
+```
+
+For example, to run the **dev** script in the example above, run **`npm run dev`** or **`yarn dev`** on your terminal.
+
+### main
+
+The main property serves as the entry point of your application and should point to the file that serves as the entry point to your application.
+
+```json
+  "main": "app.js"
+```
+
+### homepage
+
+The homepage property is used to specify the landing page for the application/package.
+
+```json
+ "homepage": "https://github.com/Easybuoy/package.json-mastery#readme",
+```
+
+### private
+
+The private property is false by default but can be set to true to prevent the application/package to be published.
+
+```json
+  "private": true
+```
+
+### license
+
+This property denotes the type of license that's being used by the project
+
+```json
+"license": "MIT"
+```
+
+### author
+
+This property denotes the creator/owner of the project
+
+```json
+"author": "Ezekiel Ekunola"
+```
+
+### repository
+
+The repository keyword is a JSON object of key/value pairs that are used to specify the version control system being used to manage the application. You can specify the type of version control being used,
+the URL to the repository, as well as an optional directory within the repository.
+
+```json
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easybuoy/package.json-mastery.git"
+  }
+```
+
+### bugs
+
+The bugs property is used to point to the issues page of the repository for the application or anyplace the issue can be reported.
+
+```json
+ "bugs": {
+    "url": "https://github.com/Easybuoy/package.json-mastery/issues"
+  }
+```
+
+### keywords
+
+The keywords property is an array of keywords that helps in identifying your project or make your project easier to find when a user searches those keywords.
+
+```json
+  "keywords": ["node", "javascript", "npm", "yarn"]
+```
+
+## Custom Properties
+
+The package.json file can also be used for package specific commands like Babel, ESLint, Jest and lots more. You can find the usage in the package documentation.
+
+Find an example of a custom property for **`Jest`** below.
+
+```json
+  "jest": {
+      "snapshotSerializers": [
+        "enzyme-to-json/serializer"
+      ]
+    }
+```
+
+## Conclusion
+
+In this article, we've been able to see what a `package.json` file is, how to create it, the different properties and their use cases.
+
+There are still so many more properties that can be specified in the package.json file, if you want to go in-depth, check [here](https://docs.npmjs.com/files/package.json).
+
+If you have any questions or feedback about this article, feel free to leave a comment.
+
+Thanks for reading.
