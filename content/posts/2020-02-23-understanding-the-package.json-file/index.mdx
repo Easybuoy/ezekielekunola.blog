@@ -236,12 +236,66 @@ Find an example of a custom property for **`Jest`** below.
     }
 ```
 
+**After combining all the properties explained above, we can end up having a `package.json` file looking like the example below**
+```json
+{
+  "name": "package.json-mastery",
+  "version": "1.0.0",
+  "description": "Mastery of the package.json file",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easybuoy/package.json-mastery.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "npm",
+    "yarn"
+  ],
+  "author": "Ezekiel Ekunola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Easybuoy/package.json-mastery/issues"
+  },
+  "homepage": "https://github.com/Easybuoy/package.json-mastery#readme",
+  "engines": {
+    "npm": "6.10.0",
+    "node": "10.14.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1"
+  },
+  "nyc": {
+    "exclude": [
+      "server/app.js",
+      "server/config/",
+      "server/build"
+    ]
+  }
+}
+```
+
 ## Conclusion
 
 In this article, we've been able to see what a `package.json` file is, how to create it, the different properties and their use cases.
 
 There are still so many more properties that can be specified in the package.json file, if you want to go in-depth, check [here](https://docs.npmjs.com/files/package.json).
 
-If you have any questions or feedback about this article, feel free to leave a comment.
+If you have any questions or feedback, please feel free to reach out on [Twitter](https://twitter.com/easybuoy).
 
 Thanks for reading.
