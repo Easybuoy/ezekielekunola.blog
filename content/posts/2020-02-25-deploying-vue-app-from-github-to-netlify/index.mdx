@@ -26,16 +26,22 @@ See example in the image below
 
 In a case where your vue application is available in a nested directory like the example shown below
 
-![](https://thepracticaldev.s3.amazonaws.com/i/9th5maami9dct1ttqhw7.gif)
+![](./images/nested-directory.gif)
+
+**Note that the vue project in the example above is nested in a client directory.**
 
 Add a **`netlify.toml`** file to the root of your project, and add the configuration below to the file.
 
 ```
 [build]
   command = "npm run build"
-  publish="path-to-vue-app/dist"
-  base = "path-to-vue-app"
+  publish="dist"
+  base = "client"
+  # The base directory should be the path to the vue project 
 ```
+Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. 
+
+**Note:** _`netlify.toml` is a configuration file where you can specify how Netlify should build/run your application. A lot can be accomplished with the `netlify.toml` file. Find out more about the `netlify.toml` file [here.](https://www.netlify.com/docs/netlify-toml-reference/)_
 
 ## Routing
 
@@ -55,8 +61,6 @@ To solve/fix the issue, you can add the following code below to your `netlify.to
 Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should no longer throw errors. See example below.
 
 ![](./images/vue-router-fixed.gif)
-
-**Note:** _`netlify.toml` is a configuration file where you can specify how Netlify should build/run your application. A lot can be accomplished with the `netlify.toml` file. Find out more about the `netlify.toml` file [here.](https://www.netlify.com/docs/netlify-toml-reference/)_
 
 ## Environment Variables
 
