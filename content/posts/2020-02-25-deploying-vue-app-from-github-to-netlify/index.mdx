@@ -8,7 +8,7 @@ excerpt: Learn about deploying vue app to netlify.
 
 I will be doing a walk-through process of deploying a Vue application from Github to Netlify.
 
-If you have a project structure where the vue app is **NOT** nested in a sub-directory like in the example shown below
+If you have a project structure where the Vue app is **NOT** nested in a sub-directory like in the example shown below
 
 ![](./images/project-structure.png)
 
@@ -24,11 +24,11 @@ See example in the image below
 
 ![](./images/vue-deploy.gif)
 
-In a case where your vue application is available in a nested directory like the example shown below
+In a case where your Vue application is available in a nested directory like the example shown below
 
 ![](./images/nested-directory.gif)
 
-**Note that the vue project in the example above is nested in a client directory.**
+**Note that the Vue project in the example above is nested in a client directory.**
 
 Add a **`netlify.toml`** file to the root of your project, and add the configuration below to the file.
 
@@ -37,7 +37,7 @@ Add a **`netlify.toml`** file to the root of your project, and add the configura
   command = "npm run build"
   publish="dist"
   base = "client"
-  # The base directory should be the path to the vue project 
+  # The base directory should be the path to the Vue project 
 ```
 Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. 
 
@@ -58,7 +58,7 @@ To solve/fix the issue, you can add the following code below to your `netlify.to
   status = 200
 ```
 
-Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should no longer throw errors. See example below.
+Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should no longer throw errors. See the example below.
 
 ![](./images/vue-router-fixed.gif)
 
@@ -66,7 +66,7 @@ Once added, push the changes to Github. Netlify should automatically deploy the 
 
 You can decide to add the environment variable at the point of deploying? or at any other point in time
 
-If you've created the vue application using vue-cli, you need to add the `VUE_APP` prefix to all your environment variables.
+If you've created the Vue application using `vue-cli`, you need to add the `VUE_APP` prefix to all your environment variables.
 
 ![](./images/vue-deploy-environment-variable.gif)
 
@@ -76,7 +76,7 @@ If you've made use of environment variables in your project, you can also add th
 
 ## Conclusion
 
-In this article we've been able to take a look at how to deploy a vue application from Github to Netlify, how to fix routing issues that can come up after deployment and well as how to add environment variables on Netlify.
+In this article, we've been able to take a look at how to deploy a Vue application from Github to Netlify, how to fix routing issues that can come up after deployment and well as how to add environment variables on Netlify.
 
 If you have any questions or feedback about this article, feel free to reach out.
 
