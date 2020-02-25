@@ -1,7 +1,7 @@
 ---
 title: Deploying Vue App from Github to Netlify
 author: Ezekiel Ekunola
-date: 2020-02-28
+date: 2020-02-25
 hero: ./images/preview.png
 excerpt: Learn about deploying vue app to netlify.
 ---
@@ -17,6 +17,7 @@ You can use the following steps to deploy:
 - Push your code to Github
 - Connect your Github account to your Netlify account
 - Select the project you want to deploy
+- Add build commands
 - Deploy project
 
 See example in the image below
@@ -29,25 +30,29 @@ In a case where your vue application is available in a nested directory like the
 
 Add a **`netlify.toml`** file to the root of your project, and add the configuration below to the file.
 
-    [build]
-      command = "npm run build"
-      publish="path-to-vue-app/dist"
-      base = "path-to-vue-app"
+```
+[build]
+  command = "npm run build"
+  publish="path-to-vue-app/dist"
+  base = "path-to-vue-app"
+```
 
 ## Routing
 
-If you've made use of routing in your project, on redirecting and reloading to a new route, you may run into issue where Netlify would throw an error ("page not found") as shown in the example beloww
+If you've made use of routing in your project, and you want to load a particular route straight from your URL, you would run into an issue where Netlify would throw an error ("page not found") as shown in the example below
 
 ![](./images/vue-broken-url.gif)
 
-You can add the following code to your `netlify.toml` file.
+To solve/fix the issue, you can add the following code below to your `netlify.toml` file.
 
-    [[redirects]]
-      from = "/*"
-      to = "/index.html"
-      status = 200
+```
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
 
-Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should not throw errors, as shown below.
+Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should no longer throw errors. See example below.
 
 ![](./images/vue-router-fixed.gif)
 
@@ -67,7 +72,7 @@ If you've made use of environment variables in your project, you can also add th
 
 ## Conclusion
 
-From the foregoing, we have seen and been able to demonstrate that hosting a vue application through Github on Netlify is pretty simple and seamless, hence can be done in little or no time.
+In this article we've been able to take a look at how to deploy a vue application from Github to Netlify, how to fix routing issues that can come up after deployment and well as how to add environment variables on Netlify.
 
 If you have any questions or feedback about this article, feel free to reach out.
 
