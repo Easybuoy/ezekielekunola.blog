@@ -17,7 +17,9 @@ You can use the following steps to deploy:
 - Push your code to Github
 - Connect your Github account to your Netlify account
 - Select the project you want to deploy
-- Add build commands
+- Add commands
+  - Build Command **(npm run build)**: This is the command that would be run for every build/deployment on Netlify. The Vue command for building and bundling our files is **`npm run build`**. 
+  - Publish Directory **(dist)**: This is the folder that contains the files that was generated from the build command. After running the build command, a **`dist`** folder is generated and it contains our minified and compiled production ready code.
 - Deploy project
 
 See example in the image below
