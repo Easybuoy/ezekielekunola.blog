@@ -8,16 +8,18 @@ excerpt: Learn about deploying vue app to netlify.
 
 I will be doing a walk-through process of deploying a Vue application from Github to Netlify.
 
-If you have a project structure where the react app is **NOT** nested in a sub-directory like in the example shown below
+If you have a project structure where the vue app is **NOT** nested in a sub-directory like in the example shown below
 
-![](https://thepracticaldev.s3.amazonaws.com/i/k6m7qw5aru5yrr4hov8f.png)
+![](./images/project-structure.png)
 
 You can use the following steps to deploy:
 
 - Push your code to Github
-- Connect Github account to your Netlify account
-- Select the project to deploy
+- Connect your Github account to your Netlify account
+- Select the project you want to deploy
 - Deploy project
+
+See example in the image below
 
 ![](./images/vue-deploy.gif)
 
@@ -36,7 +38,7 @@ Add a **`netlify.toml`** file to the root of your project, and add the configura
 
 If you've made use of routing in your project, on redirecting and reloading to a new route, you may run into issue where Netlify would throw an error ("page not found") as shown in the example beloww
 
-![](https://thepracticaldev.s3.amazonaws.com/i/s1d1njph3hvj1q5o72zk.gif)
+![](./images/vue-broken-url.gif)
 
 You can add the following code to your `netlify.toml` file.
 
@@ -47,7 +49,7 @@ You can add the following code to your `netlify.toml` file.
 
 Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should not throw errors, as shown below.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/zpi9ay3vqwe9kqk7gxtz.gif)
+![](./images/vue-router-fixed.gif)
 
 **Note:** _`netlify.toml` is a configuration file where you can specify how Netlify should build/run your application. A lot can be accomplished with the `netlify.toml` file. Find out more about the `netlify.toml` file [here.](https://www.netlify.com/docs/netlify-toml-reference/)_
 
@@ -55,17 +57,17 @@ Once added, push the changes to Github. Netlify should automatically deploy the 
 
 You can decide to add the environment variable at the point of deploying? or at any other point in time
 
-If you've created the react application using vue-cli, you need to add the `VUE_APP` prefix to all your environment variables.
+If you've created the vue application using vue-cli, you need to add the `VUE_APP` prefix to all your environment variables.
 
 ![](./images/vue-deploy-environment-variable.gif)
 
 If you've made use of environment variables in your project, you can also add them to Netlify by following the steps shown in the image below
 
-![](https://thepracticaldev.s3.amazonaws.com/i/wwt70a8li0bekdy9xg82.gif)
+![](./images/vue-environment-variables.gif)
 
 ## Conclusion
 
-From the foregoing, we have seen and been able to demonstrate that hosting a react application through Github on Netlify is pretty simple and seamless, hence can be done in little or no time.
+From the foregoing, we have seen and been able to demonstrate that hosting a vue application through Github on Netlify is pretty simple and seamless, hence can be done in little or no time.
 
 If you have any questions or feedback about this article, feel free to reach out.
 
