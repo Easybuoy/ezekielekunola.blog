@@ -3,10 +3,10 @@ title: Deploying Vue App from Github to Netlify
 author: Ezekiel Ekunola
 date: 2020-02-25
 hero: ./images/preview.png
-excerpt: Learn about deploying vue app to netlify.
+excerpt: Learn about deploying Vue app to netlify.
 ---
 
-I will be doing a walk-through process of deploying a Vue application from Github to Netlify.
+In this article, We will be going through the process of deploying a Vue application from Github to Netlify.
 
 If you have a project structure where the Vue app is **NOT** nested in a sub-directory like in the example shown below
 
@@ -37,9 +37,10 @@ Add a **`netlify.toml`** file to the root of your project, and add the configura
   command = "npm run build"
   publish="dist"
   base = "client"
-  # The base directory should be the path to the Vue project 
+  # The base directory should be the path to the nested Vue project
 ```
-Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. 
+
+Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually.
 
 **Note:** _`netlify.toml` is a configuration file where you can specify how Netlify should build/run your application. A lot can be accomplished with the `netlify.toml` file. Find out more about the `netlify.toml` file [here.](https://www.netlify.com/docs/netlify-toml-reference/)_
 
@@ -58,21 +59,17 @@ To solve/fix the issue, you can add the following code below to your `netlify.to
   status = 200
 ```
 
-Once added, push the changes to Github. Netlify should automatically deploy the changes, if not, deploy the changes manually. Once deployed, your application should no longer throw errors. See the example below.
+Once added, push the changes to Github and re-deploy the project. Once deployed, your application should no longer throw errors. See the example below.
 
 ![](./images/vue-router-fixed.gif)
 
 ## Environment Variables
 
-You can decide to add the environment variable at the point of deploying? or at any other point in time
-
-If you've created the Vue application using `vue-cli`, you need to add the `VUE_APP` prefix to all your environment variables.
-
-![](./images/vue-deploy-environment-variable.gif)
-
 If you've made use of environment variables in your project, you can also add them to Netlify by following the steps shown in the image below
 
 ![](./images/vue-environment-variables.gif)
+
+Note that If you've created the Vue application using `vue-cli`, you need to add the **`VUE_APP`** prefix to all your environment variables.
 
 ## Conclusion
 
