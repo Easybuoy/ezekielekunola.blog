@@ -24,7 +24,7 @@ module.exports = {
       {
         name: `linkedin`,
         url: `https://www.linkedin.com/in/easybuoy/`,
-      }
+      },
     ],
   },
   plugins: [
