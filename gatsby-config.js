@@ -61,5 +61,11 @@ module.exports = {
         head: true
       }
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://blog.ezekielekunola.com`,
+      },
+    },
   ],
 };
