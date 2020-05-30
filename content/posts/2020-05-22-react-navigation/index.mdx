@@ -197,6 +197,12 @@ export default function App() {
 }
 ```
 
+We should now see our Home screen rendering on our ....
+
+
+![](./images/stack-screen.png)
+
+
 Remember in our `src/screens/Home.jsx` file, we had a button that did nothing, but since we have our stack navigation setup, we can now have access to navigation prop injected by the stack navigation which can help us perform many operations, one of which is redirecting.
 
 So navigate to `src/screens/Home.jsx` and add the code below.
@@ -231,8 +237,8 @@ export default Home;
 
 In the code above, we get the navigation prop, which is an object that has a navigate function which we then call passing in the name of the screeen we want to navigate to after the button is pressed.
 
-![](./images/stack-screen.png)
-- Add gif showing navigation
+![](./images/stack-screen.gif)
+
 And there we have it, we can now navigate between screens using our stack navigation.
 ### Tab Navigation
 A tab navigation is tabbed at either the bottom or top of a screen and can be used to switch between different screens.
