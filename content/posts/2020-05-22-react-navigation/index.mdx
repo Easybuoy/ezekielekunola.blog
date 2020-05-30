@@ -1,7 +1,7 @@
 ---
 title: "Step-by-step: Navigations in React Native Navigation"
 author: Ezekiel Ekunola
-date: 2020-04-10
+date: 2020-05-22
 hero: ./images/preview.jpg
 excerpt: November 2019 I started working as Team Lead at ...
 ---
@@ -13,10 +13,15 @@ Use React Router with TypeScript (2020 Guide) - Tells you the material is up-to-
 
 In this article, we'll be covering the different types of navigations in react native using react navigation 5 and also how to combine the different navigations together.
 
+### Table Of Content
+
+- Setup
+- Setup Screens
+
 ### Prerequesites
 
 - Using expo starter
-- Making use of react-navigation 5
+- I'd be making use of react-navigation 5 in this article
 
 Setup a react native project
 
@@ -26,7 +31,114 @@ Install the dependencies below
 
 ---
 
+The dependency below is the core dependencie of react navigation
+
+- Stack Navigation
+- Tab navigation
+- Drawer navigation
+
+```
+npm install @react-navigation/native @react-navigation/stack @react-navigation/bottom-tabs @react-navigation/drawer
+```
+
+These dependencies below are the dependency relied upon for animations and ...
+
+```
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+
 In the root file of our app, in this case the `App.js` file, we would setup our react navigation there.
+
+```js
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+export default function App() {
+  return <NavigationContainer>{/* Navigation here */}</NavigationContainer>;
+}
+```
+
+### Screens setup
+
+I'd be setting up 3 screens for the purpose of this demo, feel free to just copy them.
+
+So I'd set them up in a screens directory. So create a screens directory `src/screens` and add the components below
+
+Home Screen
+```js
+// src/screens/Home.jsx
+import React from "react";
+import { View, Button, Text, StyleSheet } from "react-native";
+
+const Home = () => {
+  return (
+    <View style={styles.center}>
+      <Text>This is the home screen</Text>
+      <Button title="Go to About Screen" />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  center: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+  },
+});
+
+export default Home;
+```
+
+About Screen
+```js
+// src/screens/About.jsx
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+
+const About = () => {
+  return (
+    <View style={styles.center}>
+      <Text>This is the about screen</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  center: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+  },
+});
+
+export default About;
+```
+
+Contact Screen
+```js
+// src/screens/Contact.jsx
+import React from "react";
+import { View, StyleSheet, Text } from "react-native";
+
+const Contact = () => {
+  return (
+    <View style={styles.center}>
+      <Text>This is the contact screen</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  center: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+  },
+});
+
+export default Contact;
+```
 
 - Stack Navigation
 - Tab Navigation
