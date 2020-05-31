@@ -8,6 +8,8 @@ excerpt: November 2019 I started working as Team Lead at ...
 
 React Router with TypeScript: The Complete Guide - Completion is important!
 
+REACT NATIVE NAVIGATION & HOW TO COMBINE THEM
+
 How to use React Router with TypeScript - Simple and straightforward
 
 Step-by-step: How to use React Router with TypeScript - Promises to approach the topic in small steps
@@ -180,6 +182,27 @@ function MainStackNavigator() {
 export { MainStackNavigator };
 ```
 
+You can also customize and style the stack navigation by passing `screenOptions` style, see basic example below
+
+```js
+function MainStackNavigator() {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#9AC4F8",
+        },
+        headerTintColor: "white",
+        headerBackTitle: "Back",
+      }}
+    >
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="About" component={About} />
+    </Stack.Navigator>
+  );
+}
+```
+
 and then back in our `App.js` file, we can import and add our newly created Stack Navigator. So our `App.js` file would look like the code below
 
 ```js
@@ -199,9 +222,7 @@ export default function App() {
 
 We should now see our Home screen rendering on our ....
 
-
 ![](./images/stack-screen.png)
-
 
 Remember in our `src/screens/Home.jsx` file, we had a button that did nothing, but since we have our stack navigation setup, we can now have access to navigation prop injected by the stack navigation which can help us perform many operations, one of which is redirecting.
 
@@ -240,8 +261,12 @@ In the code above, we get the navigation prop, which is an object that has a nav
 ![](./images/stack-screen.gif)
 
 And there we have it, we can now navigate between screens using our stack navigation.
+
 ### Tab Navigation
+
 A tab navigation is tabbed at either the bottom or top of a screen and can be used to switch between different screens.
+
+Tab navigation can take in either the screen as component or a Stack as the component
 
 ### Drawer Navigation
 
