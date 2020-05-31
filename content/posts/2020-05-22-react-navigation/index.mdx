@@ -268,6 +268,73 @@ A tab navigation is tabbed at either the bottom or top of a screen and can be us
 
 Tab navigation can take in either the screen as component or a Stack as the component
 
+In our `StackNavigator.js` file, let's create another stack for contact. So our `StackNavigator.js` will look like below
+
+```js
+// src/navigations/MainStackNavigator.js
+
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+
+import Home from "../screens/Home";
+import About from "../screens/About";
+import Contact from "../screens/Contact";
+
+const Stack = createStackNavigator();
+
+const screenOptionStyle = {
+  headerStyle: {
+    backgroundColor: "#9AC4F8",
+  },
+  headerTintColor: "white",
+  headerBackTitle: "Back",
+};
+
+function MainStackNavigator() {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="About" component={About} />
+    </Stack.Navigator>
+  );
+}
+
+function ContactStackNavigator() {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen name="Contact" component={Contact} />
+    </Stack.Navigator>
+  );
+}
+
+export { MainStackNavigator, ContactStackNavigator };
+```
+
+
+We can create another file in the `navigations` directory and create a `TabNavigator.js` file, and add the markup below
+
+```js
+// src/navigations/TabNavigator.js
+
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+import { MainStackNavigator, ContactStackNavigator } from './StackNavigator'
+
+const Tab = createBottomTabNavigator();
+
+const BottomTabNavigator = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={MainStackNavigator} />
+      <Tab.Screen name="Contact" component={ContactStackNavigator} />
+    </Tab.Navigator>
+  );
+}
+
+export default BottomTabNavigator
+```
+
 ### Drawer Navigation
 
 ### Combining NAvigations
