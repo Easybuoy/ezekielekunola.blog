@@ -271,7 +271,7 @@ Tab navigation can take in either the screen as component or a Stack as the comp
 In our `StackNavigator.js` file, let's create another stack for contact. So our `StackNavigator.js` will look like below
 
 ```js
-// src/navigations/MainStackNavigator.js
+// navigations/MainStackNavigator.js
 
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -314,7 +314,7 @@ export { MainStackNavigator, ContactStackNavigator };
 We can create another file in the `navigations` directory and create a `TabNavigator.js` file, and add the markup below
 
 ```js
-// src/navigations/TabNavigator.js
+// navigations/TabNavigator.js
 
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -333,6 +333,26 @@ const BottomTabNavigator = () => {
 }
 
 export default BottomTabNavigator
+```
+
+And then back in our `App.js` file, we can now import our newly created `TabNavigator` and use it there.
+
+```js
+//  App.js
+
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+import BottomTabNavigator from "./navigation/TabNavigator";
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <BottomTabNavigator />
+    </NavigationContainer>
+  );
+}
+
 ```
 
 ### Drawer Navigation
