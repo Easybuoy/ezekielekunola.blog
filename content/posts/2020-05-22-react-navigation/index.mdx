@@ -359,6 +359,51 @@ export default function App() {
 
 
 ### Drawer Navigation
+A drawer navigation is....
+
+In order to create a drawer navigation, we would create another file in our `navigations` directory called `DrawerNavigator`
+
+In that file, we would add our drawer navigator markup
+```js
+import React from "react";
+
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
+import { ContactStackNavigator } from "./StackNavigator";
+import TabNavigator from "./TabNavigator";
+
+const Drawer = createDrawerNavigator();
+
+function DrawerNavigator() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Home" component={TabNavigator} />
+      <Drawer.Screen name="Contact" component={ContactStackNavigator} />
+    </Drawer.Navigator>
+  );
+}
+
+export default DrawerNavigator;
+
+```
+
+And then back in our `App.js` file, we can now import our newly created `DrawerNavigtor` and use it there.
+
+```js
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+import DrawerNavigator from "./navigation/DrawerNavigator";
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <DrawerNavigator />
+    </NavigationContainer>
+  );
+}
+
+```
 
 ### Combining NAvigations
 
