@@ -20,14 +20,6 @@ const seoQuery = graphql`
         }
       }
     }
-    aboutImage: file(relativePath: { eq: "ezekiel-ekunola.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500, quality: 100) {
-            aspectRatio
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
   }
 `;
 
@@ -76,15 +68,7 @@ const SEO = ({
   const fullURL = (path) => (path ? `${path}` : site.siteUrl);
 
   // If no image is provided lets looks for a default novela static image
-
-  const isBrowser = typeof window !== `undefined`
-
-  let origin = ""
-  if (isBrowser) {
-    origin = window.location.origin
-  }
-
-  image = `${origin}${seoQuery.aboutImage.childImageSharp.fluid.src}`
+  image = 'https://ezekielekunola.com/static/85b95b7e02157462dacc064f3bc8d616/f0719/profile4.jpg'
 
   // Checks if the source of the image is hosted on Contentful
   if (`${image}`.includes("ctfassets")) {
