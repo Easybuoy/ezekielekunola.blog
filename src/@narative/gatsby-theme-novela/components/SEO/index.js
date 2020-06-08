@@ -20,6 +20,14 @@ const seoQuery = graphql`
         }
       }
     }
+    aboutImage: file(relativePath: { eq: "ezekiel-ekunola.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            aspectRatio
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
   }
 `;
 
@@ -68,7 +76,15 @@ const SEO = ({
   const fullURL = (path) => (path ? `${path}` : site.siteUrl);
 
   // If no image is provided lets looks for a default novela static image
-  image = 'https://say-their-names.fra1.cdn.digitaloceanspaces.com/petition.png'
+
+  const isBrowser = typeof window !== `undefined`
+
+  let origin = ""
+  if (isBrowser) {
+    origin = window.location.origin
+  }
+
+  image = `${origin}${seoQuery.aboutImage.childImageSharp.fluid.src}`
 
   // Checks if the source of the image is hosted on Contentful
   if (`${image}`.includes("ctfassets")) {
