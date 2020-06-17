@@ -53,9 +53,11 @@ These dependencies below are the dependency relied upon for animations and ...
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 ```
 
-In the root file of our app, in this case the `App.js` file, we would setup our react navigation there.
+In the root file of our app, in this case the **App.js** file, we would setup our react navigation there.
 
 ```js
+// ./App.js
+
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -66,14 +68,17 @@ export default function App() {
 
 ### Screens setup
 
+Next step would be to setup screens that would be used in our application.
+
 I'd be setting up 3 screens for the purpose of this demo, feel free to just copy them.
 
-So I'd set them up in a screens directory. So create a screens directory `src/screens` and add the components below
+So I'd set them up in a screens directory. So create a screens directory **src/screens** and add the components below
 
-Home Screen
+**Home Screen**
 
 ```js
 // src/screens/Home.jsx
+
 import React from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
 
@@ -98,10 +103,11 @@ const styles = StyleSheet.create({
 export default Home;
 ```
 
-About Screen
+**About Screen**
 
 ```js
 // src/screens/About.jsx
+
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
@@ -125,10 +131,11 @@ const styles = StyleSheet.create({
 export default About;
 ```
 
-Contact Screen
+**Contact Screen**
 
 ```js
 // src/screens/Contact.jsx
+
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
@@ -158,11 +165,17 @@ export default Contact;
 
 ### Stack Navigation
 
-The stack navigation provides a way for your react native apps to transition between screens by using a stack, so that means the screens are stacked on each other. For example, if you navigate from Login to Signup, the Signup screen is stacked on top of the login screen, and if you navigate back, the signup screen is then popped off the stack.
+The stack navigation provides a way for your react native apps to transition between screens by using a stack, that means the screens are stacked on each other. 
 
-To setup the stack navigation, I'd create a `navigation` directory in the root of our project, and create a `StackNavigator.js` file in there, and add our Stack navigation setup.
+For example, if you navigate from login to signup screen, the signup screen is stacked on top of the login screen, and if you navigate back, the signup screen is then popped off the stack.
+
+To setup the stack navigation, I'd create a **navigation** directory in the root of our project. Inside our newly created directory, I'd also create a **StackNavigator.js** file in there, and add our Stack navigation setup.
+
+**Note: You can decide to name the folders and files however you want**
 
 ```js
+// navigation/StackNavigator.js
+
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -204,9 +217,11 @@ function MainStackNavigator() {
 }
 ```
 
-and then back in our `App.js` file, we can import and add our newly created Stack Navigator. So our `App.js` file would look like the code below
+Back in our **App.js** file, we can import and add our newly created Stack Navigator. So our **App.js** file would look like the code below
 
 ```js
+// ./App.js
+
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -221,7 +236,7 @@ export default function App() {
 }
 ```
 
-We should now see our Home screen rendering on our ....
+Now if we run the code on our emulator, We should now see our Home screen rendering on our Stack screens.
 
 ![](./images/stack-screen.png)
 
