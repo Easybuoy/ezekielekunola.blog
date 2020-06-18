@@ -44,7 +44,7 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 
 In the root file of our app, in this case the **App.js** file, we would setup our react navigation there.
 
-```js
+```jsx
 // ./App.js
 
 import React from "react";
@@ -65,7 +65,7 @@ So I'd set them up in a screens directory. So create a screens directory **src/s
 
 **Home Screen**
 
-```js
+```jsx
 // src/screens/Home.js
 
 import React from "react";
@@ -94,7 +94,7 @@ export default Home;
 
 **About Screen**
 
-```js
+```jsx
 // src/screens/About.js
 
 import React from "react";
@@ -122,7 +122,7 @@ export default About;
 
 **Contact Screen**
 
-```js
+```jsx
 // src/screens/Contact.js
 
 import React from "react";
@@ -148,10 +148,9 @@ const styles = StyleSheet.create({
 export default Contact;
 ```
 
-
 ### **Stack Navigation**
 
-The stack navigation provides a way for your react native apps to transition between screens by using a stack, that means the screens are stacked on each other. 
+The stack navigation provides a way for your react native apps to transition between screens by using a stack, that means the screens are stacked on each other.
 
 For example, if you navigate from login to signup screen, the signup screen is stacked on top of the login screen, and if you navigate back, the signup screen is then popped off the stack.
 
@@ -159,7 +158,7 @@ To setup the stack navigation, I'd create a **navigation** directory in the root
 
 **Note: You can decide to name the folders and files however you want**
 
-```js
+```jsx
 // navigation/StackNavigator.js
 
 import React from "react";
@@ -184,7 +183,7 @@ export { MainStackNavigator };
 
 You can also customize and style the stack navigation by passing `screenOptions` style, see basic example below
 
-```js
+```jsx
 function MainStackNavigator() {
   return (
     <Stack.Navigator
@@ -205,7 +204,7 @@ function MainStackNavigator() {
 
 Back in our **App.js** file, we can import and add our newly created Stack Navigator. So our **App.js** file would look like the code below
 
-```js
+```jsx
 // ./App.js
 
 import React from "react";
@@ -230,7 +229,7 @@ Remember in our **src/screens/Home.js** file, we had a button that did nothing, 
 
 So navigate to **src/screens/Home.js** and add the code below.
 
-```js
+```jsx
 // src/screens/Home.js
 
 import React from "react";
@@ -242,7 +241,7 @@ const Home = ({ navigation }) => {
       <Text>This is the home screen</Text>
       <Button
         title="Go to About Screen"
-        onPress={() => navigation.navigate("About")} // We added an onPress event which would navigate to the About screen 
+        onPress={() => navigation.navigate("About")} // We added an onPress event which would navigate to the About screen
       />
     </View>
   );
@@ -274,7 +273,7 @@ Tab navigation can take in either the screen as component or a Stack as the comp
 
 In our **StackNavigator.js** file, let's create another stack for our contact screen. So our **StackNavigator.js** will look like below
 
-```js
+```jsx
 // navigations/MainStackNavigator.js
 
 import React from "react";
@@ -314,16 +313,15 @@ function ContactStackNavigator() {
 export { MainStackNavigator, ContactStackNavigator };
 ```
 
-
 We can then create another file **TabNavigator.js** in the **navigations** directory and add the markup for our **TabNavigator**
 
-```js
+```jsx
 // navigations/TabNavigator.js
 
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { MainStackNavigator, ContactStackNavigator } from './StackNavigator'
+import { MainStackNavigator, ContactStackNavigator } from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -334,14 +332,14 @@ const BottomTabNavigator = () => {
       <Tab.Screen name="Contact" component={ContactStackNavigator} />
     </Tab.Navigator>
   );
-}
+};
 
-export default BottomTabNavigator
+export default BottomTabNavigator;
 ```
 
 And then back in our `App.js` file, we can now import our newly created `TabNavigator` and use it there.
 
-```js
+```jsx
 //  App.js
 
 import React from "react";
@@ -356,19 +354,19 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
 ```
 
 ![](./images/tab-navigation.gif)
 
-
 ### **Drawer Navigation**
+
 A drawer navigation is....
 
 In order to create a drawer navigation, we would create another file in our `navigations` directory called `DrawerNavigator`
 
 In that file, we would add our drawer navigator markup
-```js
+
+```jsx
 import React from "react";
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
@@ -388,12 +386,11 @@ function DrawerNavigator() {
 }
 
 export default DrawerNavigator;
-
 ```
 
 And then back in our `App.js` file, we can now import our newly created `DrawerNavigtor` and use it there.
 
-```js
+```jsx
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -406,7 +403,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
 ```
 
 ![](./images/drawer-navigation.gif)
@@ -414,3 +410,5 @@ export default function App() {
 There are also configuration options and header icons you can add to make your drawer navigation. Find out more [here](https://reactnavigation.org/docs/header-buttons).
 
 ### **Conclusion**
+In this article, we've been able to look at a basic navigation setup for react native apps using react navigation 5. We were also able to combine the different types of navigtions together.
+
