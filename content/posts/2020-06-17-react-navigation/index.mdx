@@ -3,7 +3,7 @@ title: Combining Stack, Tab & Drawer Navigations in React Native With React Navi
 author: Ezekiel Ekunola
 date: 2020-06-17
 hero: ./images/preview.png
-excerpt: November 2019 I started working as Team Lead at ...
+excerpt: In this article, we'll be covering the different types of navigations in react...
 ---
 
 In this article, we'll be covering the different types of navigations in react native using react navigation 5 and also how to combine the different navigations together.
@@ -12,17 +12,16 @@ In this article, we'll be covering the different types of navigations in react n
 
 ### **Table Of Content**
 
-- Setup
-- Setup Screens
+- [React Native Setup](#react-native-setup)
+- [Setup Screens](#screens-setup)
+- Installing Dependencies
+- [Stack Navigator](#stack-navigator)
+- [Tab Navigator](#tab-navigator)
+- [Drawer Navigator](#drawer-navigator)
 
-1. Create a fresh react-native project (In this section, you can say the project can be created with expo or cli. Both work.)
-2. Installing Dependencies
-3. Setup screens
-4. Combine screens in a Stack Navigator
-5. Placing a Stack Navigator inside a Tab navigator
-6. Placing Stack and Tab Navigators inside a Drawer navigator
+### **React Native Setup** <a name="react-native-setup"></a>
 
-Setup a react native project
+Setup a react native project, you can also make use of expo cli to setup your react native project
 
 ### **React Navigation Dependencies & Setup**
 
@@ -59,7 +58,7 @@ export default function App() {
 }
 ```
 
-### **Screens setup**
+### **Screens setup** <a name="screens-setup"></a>
 
 Next step would be to setup screens that would be used in our application.
 
@@ -152,7 +151,7 @@ const styles = StyleSheet.create({
 export default Contact;
 ```
 
-### **Stack Navigation**
+### **Stack Navigation** <a name="stack-navigator"></a>
 
 The stack navigation provides a way for your react native apps to transition between screens by using a stack, that means the screens are stacked on each other.
 
@@ -269,7 +268,7 @@ In the code above, we get the navigation prop, which is an object that has a nav
 
 And there we have it, we can now navigate between screens using our stack navigation.
 
-### **Tab Navigation**
+### **Tab Navigation** <a name="tab-navigator"></a>
 
 A tab navigation is tabbed at either the bottom or top of a screen and can be used to switch between different screens.
 
@@ -362,7 +361,7 @@ export default function App() {
 
 ![](./images/tab-navigation.gif)
 
-### **Drawer Navigation**
+### **Drawer Navigation** <a name="drawer-navigator"></a>
 
 A drawer navigation is....
 
