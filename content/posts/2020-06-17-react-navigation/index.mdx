@@ -23,7 +23,7 @@ In this article, we'll be covering the different types of navigations and also h
 
 ### **React Native Setup** <a name="react-native-setup"></a>
 
-Setup a react native project, you can also make use of expo cli to setup your react-native project
+Setup a react native project, you can also make use of Expo CLI to setup your react-native project
 
 ### **React Navigation Dependencies & Setup** <a name="dependencies-setup"></a>
 
@@ -50,9 +50,10 @@ In the root file of our app, in this case, the **App.js** file, we would set up 
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 
-export default function App() {
+const App = () => {
   return <NavigationContainer>{/* Navigation here */}</NavigationContainer>;
-}
+};
+export default App;
 ```
 
 ### **Screens setup** <a name="screens-setup"></a>
@@ -169,14 +170,14 @@ import About from "../screens/About";
 
 const Stack = createStackNavigator();
 
-function MainStackNavigator() {
+const MainStackNavigator = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="About" component={About} />
     </Stack.Navigator>
   );
-}
+};
 
 export { MainStackNavigator };
 ```
@@ -184,7 +185,7 @@ export { MainStackNavigator };
 You can also customize and style the stack navigation by adding **screenOptions** props style, see basic example below
 
 ```jsx
-function MainStackNavigator() {
+const MainStackNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -199,7 +200,7 @@ function MainStackNavigator() {
       <Stack.Screen name="About" component={About} />
     </Stack.Navigator>
   );
-}
+};
 ```
 
 Back in our **App.js** file, we can import and add our newly created Stack Navigator. So our **App.js** file would look like the code below
@@ -212,13 +213,14 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { MainStackNavigator } from "./navigation/StackNavigator";
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <MainStackNavigator />
     </NavigationContainer>
   );
-}
+};
+export default App;
 ```
 
 Now if we run the code on our emulator, We should now see our Home screen rendering on our Stack screens.
@@ -293,22 +295,22 @@ const screenOptionStyle = {
   headerBackTitle: "Back",
 };
 
-function MainStackNavigator() {
+const MainStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="About" component={About} />
     </Stack.Navigator>
   );
-}
+};
 
-function ContactStackNavigator() {
+const ContactStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
   );
-}
+};
 
 export { MainStackNavigator, ContactStackNavigator };
 ```
@@ -337,7 +339,7 @@ const BottomTabNavigator = () => {
 export default BottomTabNavigator;
 ```
 
-And then back in our `App.js` file, we can now import our newly created `TabNavigator` and use it there.
+And then back in our **App.js** file, we can now import our newly created **TabNavigator** and use it there.
 
 ```jsx
 //  App.js
@@ -347,13 +349,14 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import BottomTabNavigator from "./navigation/TabNavigator";
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <BottomTabNavigator />
     </NavigationContainer>
   );
-}
+};
+export default App;
 ```
 
 ![Tab Navigation](./images/tab-navigation.gif)
@@ -376,19 +379,19 @@ import TabNavigator from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();
 
-function DrawerNavigator() {
+const DrawerNavigator = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={TabNavigator} />
       <Drawer.Screen name="Contact" component={ContactStackNavigator} />
     </Drawer.Navigator>
   );
-}
+};
 
 export default DrawerNavigator;
 ```
 
-And then back in our `App.js` file, we can now import our newly created `DrawerNavigtor.js` file and use it as our navigator.
+And then back in our **App.js** file, we can now import our newly created **DrawerNavigtor.js** file and use it as our navigator.
 
 ```jsx
 import React from "react";
@@ -396,13 +399,14 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import DrawerNavigator from "./navigation/DrawerNavigator";
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <DrawerNavigator />
     </NavigationContainer>
   );
-}
+};
+export default App;
 ```
 
 ![Drawer Navigaiton](./images/drawer-navigation.gif)
