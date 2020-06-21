@@ -8,12 +8,9 @@ excerpt: In this article, we'll be covering the different types of navigations i
 
 In this article, we'll be covering the different types of navigations and also how to combine the different navigations together using react-navigation 5.
 
-<!-- This has been made relatively easy since each -->
-<!-- - Talk about how easy it is to do compared to other versions of react navigation -->
-
 ### **Table Of Content**
 
-- [React Native Setup](#react-native-setup)
+- [Project Setup](#react-native-setup)
 - [Screens Setup](#screens-setup)
 - [Installing Dependencies](#dependencies-setup)
 - [Stack Navigator](#stack-navigator)
@@ -21,9 +18,19 @@ In this article, we'll be covering the different types of navigations and also h
 - [Drawer Navigator](#drawer-navigator)
 - [Conclusion](#conclusion)
 
-### **React Native Setup** <a name="react-native-setup"></a>
+### **Project Setup** <a name="react-native-setup"></a>
 
-Setup a react native project, you can also make use of Expo CLI to setup your react-native project
+To set up a react-native project, you can make use of the React Native CLI or the Expo CLI.
+
+I would be making use of the Expo CLI to set up a react-native project. To do so, run the following command on your terminal.
+
+```
+expo init project-name
+```
+
+The above command would generate a react-native project bootstrapped by Expo.
+
+To set up a react-native project using the React-Native CLI, check [here](https://reactnative.dev/docs/environment-setup).
 
 ### **React Navigation Dependencies & Setup** <a name="dependencies-setup"></a>
 
@@ -151,11 +158,11 @@ export default Contact;
 
 ### **Stack Navigation** <a name="stack-navigator"></a>
 
-The stack navigation provides a way for your react native apps to transition between screens by using a stack, which means the screens are stacked on each other.
+Stack navigation provides a way for react-native apps to transition between screens by using a stack, which means the screens are stacked on each other.
 
 For example, if you navigate from login to signup screen, the signup screen is stacked on top of the login screen, and if you navigate back, the signup screen is then popped off the stack.
 
-To set up the stack navigation, I'd create a **navigation** directory at the root of our project. Inside our newly created directory, I'd also create a **StackNavigator.js** file in there, and add our Stack navigation setup.
+To set up the stack navigation, I'd create a **navigation** directory at the root of our project. Inside our newly created directory, I'd also create a **StackNavigator.js** file in there, and add our stack navigation setup.
 
 **Note: You can decide to name the folders and files however you want**
 
@@ -363,7 +370,7 @@ export default App;
 
 ### **Drawer Navigation** <a name="drawer-navigator"></a>
 
-Drawer navigation is....
+Drawer navigation is a slide out drawer that contains links to various screens. The Drawer navigation opens when a menu icon is clicked or when a user swipes their finger from the left edge of the app ...
 
 In order to create drawer navigation, we would create another file in our **navigations** directory called **DrawerNavigator.js**
 
