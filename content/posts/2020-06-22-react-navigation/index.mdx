@@ -67,14 +67,14 @@ export default App;
 
 The next step would be to set up screens that would be used in our application.
 
-I'd be setting up 3 screens for the purpose of this demo, feel free to just copy them.
+I would be setting up 3 screens for the purpose of this demo, feel free to just copy them.
 
-So I'd set them up in a screens directory. So create a screens directory **src/screens** and add the components below
+I would be setting up 3 screens for the purpose of this demo, feel free to just copy them.
 
 **Home Screen**
 
 ```jsx
-// src/screens/Home.js
+// ./screens/Home.js
 
 import React from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
@@ -103,7 +103,7 @@ export default Home;
 **About Screen**
 
 ```jsx
-// src/screens/About.js
+// ./screens/About.js
 
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
@@ -131,7 +131,7 @@ export default About;
 **Contact Screen**
 
 ```jsx
-// src/screens/Contact.js
+// ./screens/Contact.js
 
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
@@ -234,12 +234,12 @@ Now if we run the code on our emulator, We should now see our Home screen render
 
 ![Stack Screen](./images/stack-screen.png)
 
-Remember in our **src/screens/Home.js** file, we had a button that did nothing, but since we have our stack navigation setup, we can now have access to navigation prop injected by the stack navigation which can help us perform many operations, one of which is redirecting.
+Remember in our **./screens/Home.js** file, we had a button that did nothing, but since we have our stack navigation setup, we can now have access to navigation prop injected by the stack navigation which can help us perform many operations, one of which is redirecting.
 
-So navigate to **src/screens/Home.js** and add the code below.
+So navigate to **./screens/Home.js** and add the code below.
 
 ```jsx
-// src/screens/Home.js
+// ./screens/Home.js
 
 import React from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
