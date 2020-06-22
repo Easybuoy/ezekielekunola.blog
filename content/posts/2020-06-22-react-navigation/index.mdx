@@ -10,6 +10,7 @@ In this article, we'll be covering the different types of navigations and also h
 
 ### **Table Of Content**
 
+- [Prerequisite](#prerequisite)
 - [Project Setup](#react-native-setup)
 - [Screens Setup](#screens-setup)
 - [Installing Dependencies](#dependencies-setup)
@@ -18,6 +19,12 @@ In this article, we'll be covering the different types of navigations and also h
 - [Drawer Navigator](#drawer-navigator)
 - [Conclusion](#conclusion)
 
+### **Prerequisite** <a name="prerequisite"></a>
+To be able to follow up with this article, you must have the following setup on your local environment
+- [Node](https://nodejs.org) installed.
+
+- An emulator to test the app. You can use either [Android Studio](https://developer.android.com/studio) or [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
+
 ### **Project Setup** <a name="react-native-setup"></a>
 
 To set up a react-native project, you can make use of the React Native CLI or the Expo CLI.
@@ -25,12 +32,21 @@ To set up a react-native project, you can make use of the React Native CLI or th
 I would be making use of the Expo CLI to set up a react-native project. To do so, run the following command on your terminal.
 
 ```
+npm install -g expo-cli
+```
+The above command would install Expo CLI on your machine.
+
+**Note:** You need to have [Node v12](https://nodejs.org/en/download/) installed on your machine to be able to install Expo CLI using the command line.
+
+After the above command runs successfully, run the command below to generate/create a react-native project. 
+
+```
 expo init project-name
 ```
 
-The above command would generate a react-native project using [Expo](https://docs.expo.io).
+Once the above command runs successfully, open the project in your desired code editor, and run `npm start` on the terminal to start the application.
 
-To set up a react-native project using the React-Native CLI, check [here](https://reactnative.dev/docs/environment-setup).
+*To set up a react-native project using the React-Native CLI, check [here](https://reactnative.dev/docs/environment-setup).*
 
 ### **React Navigation Dependencies & Setup** <a name="dependencies-setup"></a>
 
@@ -428,7 +444,7 @@ There are also configuration options and header icons you can add to customize y
 
 ### **Conclusion** <a name="conclusion"></a>
 
-In this article, we've been able to look at how to set up a basic navigation setup for react-native apps using react-navigation 5. We were also able to combine the different types of navigations together.
+In this article, we've been able to look at how to set up and combine the Stack, Tab and Drawer navigation for our react-native app using react-navigation 5.
 
 The source code used in demonstrating this article can be found [here](https://github.com/Easybuoy/react-native-navigation).
 
