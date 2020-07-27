@@ -1,3 +1,11 @@
+---
+title: Setting up Chakra UI Vue with Nuxt
+author: Ezekiel Ekunola
+date: 2020-07-25
+hero: ./images/preview.png
+excerpt: In this article, we'll be covering the different ways to set up ...
+---
+
 In this article, we'll be covering the different ways to set up and configure `chakra-ui-vue` for a Nuxt application.
 
 ## **Table Of Content**
@@ -5,26 +13,31 @@ In this article, we'll be covering the different ways to set up and configure `c
 - [Prerequisite](#prerequisite)
 - [What is Nuxt](#what-is-nuxt)
 - [What is Chakra UI](#what-is-chakra-ui)
-- [Setup Nuxt App](#setup-nuxt-app) 
+- [Setup Nuxt App](#setup-nuxt-app)
+
   - [Using Create-Nuxt-App](#using-create-nuxt-app)
   - [Starting From Scratch](#starting-from-scratch)
-     - [Setting up Nuxt]()
-     - [Setting Up Chakra UI]()
-  
+    - [Setting up Nuxt]()
+    - [Setting Up Chakra UI]()
+
 - [Conclusion](#conclusion)
 
 ## **Prerequisite** <a name="prerequisite"></a>
+
 To be able to follow up with this article, you must have the following setup on your local environment
 
 - [Node]() installed.
 
 ## **What is Nuxt** <a name="what-is-nuxt"></a>
+
 Nuxt.js is a free and open-source web application framework based on Vue.js, Node.js, Webpack, and Babel.js. Find out more [here](https://nuxtjs.org).
 
 ## **What is Chakra UI Vue** <a name="what-is-chakra-ui"></a>
+
 Chakra UI Vue gives you a set of accessible and composable Vue components that you can use to build your favourite applications and sites. Find out more [here](https://vue.chakra-ui.com).
 
 ## **Setup Nuxt App** <a name="setup-nuxt-app"></a>
+
 There are two ways of setting up a Nuxt application, either by [starting from scratch]() or using the [create-nuxt-app]().
 
 ### **Using Create-Nuxt-App** <a name="using-create-nuxt-app"></a>
@@ -41,9 +54,10 @@ For npx, run the command below
 npx create-nuxt-app <project-name>
 ```
 
-Where <project-name> is the name of the project you want to create.
+Where `<project-name>` is the name of the project you want to create.
 
 For yarn, run the command below
+
 ```
 yarn create nuxt-app <project-name>
 ```
@@ -52,30 +66,35 @@ The above command would prompt you with some questions, and configurations you w
 
 See example in the image below
 
-
 And that's it, you've been able to create a Nuxt application, bootstrapped with Chakra UI Vue, you can go ahead to build out your application using Chakra UI Vue. Find out more about the create-nuxt-app setup [here](https://github.com/nuxt/create-nuxt-app)
 
 ### **Starting from Scratch** <a name="starting-from-scratch"></a>
-If you have an already existing nuxt project, you can skip to [Setting Up Chakra UI](), but if you want to set up a nuxt project from scratch, you can follow the next steps below
-  
- - **Setting up Nuxt** <a name="starting-from-scratch"></a>
 
-    - Create project folder and open in your code editor
+If you have an already existing nuxt project, you can skip to [Setting Up Chakra UI](), but if you want to set up a nuxt project from scratch, you can follow the next steps below
+
+- **Setting up Nuxt** <a name="starting-from-scratch"></a>
+
+  - Create project folder and open in your code editor
+
 - INitialize package.json
 - install dependencies
+
 ```
 npm install --save nuxt
 ```
 
 - Add scripts to package.json
+
 ```json
  "scripts": {
     "dev": "nuxt"
   }
 ```
+
 - Create a pages directory, in the root of the project, and create a index.vue file there.
 
 Add the code below to the index.vue file
+
 ```
 <template>
   <p>Hello</p>
@@ -84,13 +103,15 @@ Add the code below to the index.vue file
 
 To run the app, run `yarn dev` on your terminal.
 
- - **Setting up Chakra UI** <a name="starting-from-scratch"></a>
-Install chakra dependencies
+- **Setting up Chakra UI** <a name="starting-from-scratch"></a>
+  Install chakra dependencies
+
 ```
 yarn add @chakra-ui/nuxt @nuxtjs/emotion
 ```
 
 - Create `nuxt.config` file in the root of the project and add the configuration below
+
 ```js
 export default {
   mode: "universal",
@@ -117,7 +138,7 @@ export default {
 };
 ```
 
-Edit the index.vue file, and add the code below. 
+Edit the index.vue file, and add the code below.
 
 ```vue
 <template>
@@ -137,9 +158,13 @@ Edit the index.vue file, and add the code below.
             mr="3"
             :icon="colorMode === 'light' ? 'moon' : 'sun'"
             @click="toggleColorMode"
-            :aria-label="`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`"
+            :aria-label="
+              `Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`
+            "
           />
-          <CButton left-icon="info" variant-color="blue" @click="showToast">Show Toast</CButton>
+          <CButton left-icon="info" variant-color="blue" @click="showToast"
+            >Show Toast</CButton
+          >
         </CBox>
         <CAvatarGroup>
           <CAvatar
@@ -147,24 +172,24 @@ Edit the index.vue file, and add the code below.
             alt="Evan You"
             src="https://pbs.twimg.com/profile_images/1206997998900850688/cTXTQiHm_400x400.jpg"
           >
-            <CAvatarBadge size="1.0em" bg="green.500"/>
+            <CAvatarBadge size="1.0em" bg="green.500" />
           </CAvatar>
           <CAvatar
             name="Jonathan Bakebwa"
             alt="Jonathan Bakebwa"
             src="https://res.cloudinary.com/xtellar/image/upload/v1572857445/me_zqos4e.jpg"
           >
-            <CAvatarBadge size="1.0em" bg="green.500"/>
+            <CAvatarBadge size="1.0em" bg="green.500" />
           </CAvatar>
           <CAvatar
             name="Segun Adebayo"
             alt="Segun Adebayo"
             src="https://pbs.twimg.com/profile_images/1169353373012897802/skPUWd6e_400x400.jpg"
           >
-            <CAvatarBadge size="1.0em" bg="green.500"/>
+            <CAvatarBadge size="1.0em" bg="green.500" />
           </CAvatar>
           <CAvatar src="pop">
-            <CAvatarBadge size="1.0em" border-color="papayawhip" bg="tomato"/>
+            <CAvatarBadge size="1.0em" border-color="papayawhip" bg="tomato" />
           </CAvatar>
         </CAvatarGroup>
         <CButton
@@ -172,17 +197,23 @@ Edit the index.vue file, and add the code below.
           variant-color="red"
           mt="3"
           @click="showModal = true"
-        >Delete Account</CButton>
+          >Delete Account</CButton
+        >
         <CModal :is-open="showModal">
-          <CModalOverlay/>
+          <CModalOverlay />
           <CModalContent>
             <CModalHeader>Are you sure?</CModalHeader>
             <CModalBody>Deleting user cannot be undone</CModalBody>
             <CModalFooter>
               <CButton @click="showModal = false">Cancel</CButton>
-              <CButton margin-left="3" variant-color="red" @click="showModal = false">Delete User</CButton>
+              <CButton
+                margin-left="3"
+                variant-color="red"
+                @click="showModal = false"
+                >Delete User</CButton
+              >
             </CModalFooter>
-            <CModalCloseButton @click="showModal = false"/>
+            <CModalCloseButton @click="showModal = false" />
           </CModalContent>
         </CModal>
       </CFlex>
@@ -269,9 +300,7 @@ export default {
   }
 }
 </script>
-
 ```
-
 
 - Create `layouts` directory and a `default.vue` file, and add the code below
 
@@ -281,8 +310,8 @@ export default {
     <CThemeProvider>
       <CColorModeProvider>
         <CBox font-family="body" as="main">
-          <CReset/>
-          <Nuxt/>
+          <CReset />
+          <Nuxt />
         </CBox>
       </CColorModeProvider>
     </CThemeProvider>
@@ -294,7 +323,7 @@ import {
   CThemeProvider,
   CColorModeProvider,
   CReset,
-  CBox
+  CBox,
 } from "@chakra-ui/vue";
 
 export default {
@@ -303,15 +332,14 @@ export default {
     CThemeProvider,
     CColorModeProvider,
     CReset,
-    CBox
-  }
+    CBox,
+  },
 };
 </script>
-
 ```
 
-
 ### **Conclusion** <a name="conclusion"></a>
+
 In this article, we've been able to look at the different ways to set up chakra UI vue using Nuxt.
 
 The source code used in demonstrating this article can be found [here]().
