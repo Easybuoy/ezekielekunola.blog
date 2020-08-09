@@ -23,7 +23,7 @@ In this article, we'll be covering the different ways to set up and configure `c
 ## **Prerequisite** <a name="prerequisite"></a>
 To be able to follow up with this article, you must have the following setup on your local environment
 
-- [Node]() installed.
+- [Node](https://nodejs.org) installed.
 
 ## **What is Nuxt** <a name="what-is-nuxt"></a>
 Nuxt.js is a free and open-source web application framework based on Vue.js, Node.js, Webpack, and Babel.js. Find out more [here](https://nuxtjs.org).
@@ -32,7 +32,7 @@ Nuxt.js is a free and open-source web application framework based on Vue.js, Nod
 Chakra UI Vue gives you a set of accessible and composable Vue components that you can use to build your favorite applications and sites. Find out more [here](https://vue.chakra-ui.com).
 
 ## **Setup Nuxt App** <a name="setup-nuxt-app"></a>
-There are two ways of setting up a Nuxt application, either by [starting from scratch]() or using the [create-nuxt-app]().
+There are two ways of setting up a Nuxt application, either by [starting from scratch](#starting-from-scratch) or using the [create-nuxt-app](#using-create-nuxt-app).
 
 ### **Using Create-Nuxt-App** <a name="using-create-nuxt-app"></a>
 
@@ -47,7 +47,7 @@ npx create-nuxt-app <project-name>
 
 Where `<project-name>` in the above command is the name of the project you want to create.
 
-> Note: The npx command comes bundled with npm versions 5.2.0 and above, if you use [yarn](), you can run `yarn create nuxt-app <project-name>` on your terminal.
+> Note: The npx command comes bundled with npm versions 5.2.0 and above, if you use [yarn](https://yarnpkg.com), you can run `yarn create nuxt-app <project-name>` on your terminal.
 
 
 The above command would prompt you with some questions, and configurations you want for the project. See example in the gif below
@@ -65,7 +65,7 @@ Once started, click on the generated link and open in the browser, you should se
 And that's it, you've been able to create a Nuxt application, bootstrapped with Chakra UI Vue, you can go ahead to build out your application using Chakra UI Vue. Find out more about the create-nuxt-app setup [here](https://github.com/nuxt/create-nuxt-app).
 
 ### **Starting from Scratch** <a name="starting-from-scratch"></a>
-If you have an already existing nuxt project, you can skip to [Setting Up Chakra UI](), but if you want to set up a nuxt project from scratch, you can follow the next steps below
+If you have an already existing nuxt project, you can skip to [Setting Up Chakra UI](#setting-up-chakra-ui), but if you want to set up a nuxt project from scratch, you can follow the next steps below
 
 
 - **Setting up Nuxt** <a name="setting-up-nuxt"></a>
@@ -88,7 +88,9 @@ Then add the scripts to the package.json
 
 ```json
  "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   }
 ```
 - Create a pages directory, in the root of the project, and create an index.vue file there.
@@ -114,7 +116,6 @@ npm install @chakra-ui/nuxt @nuxtjs/emotion
 ```js
 export default {
   mode: "universal",
-
   head: {
     title: "Chakra UI Vue Starter",
     meta: [
@@ -132,7 +133,6 @@ export default {
   modules: [
     "@chakra-ui/nuxt", // register the chakra nuxt package
     "@nuxtjs/emotion", // register the emotion package which is being used by chakra-ui-vue
-    // Doc: https://http.nuxtjs.org
   ],
 };
 ```
@@ -227,8 +227,8 @@ export default {
 ### **Conclusion** <a name="conclusion"></a>
 In this article, we've been able to look at the different ways to set up chakra UI vue using Nuxt.
 
-The source code used in demonstrating this article can be found [here]().
+The source code used in demonstrating this article can be found [here](https://github.com/Easybuoy/chakra-ui-vue-nuxt-starter).
 
 If you have any questions or feedback about this article, feel free to leave a comment.
 
-Thanks for reading.
+Thanks for reading. 
